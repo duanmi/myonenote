@@ -1,0 +1,10 @@
+OneNote_RecycleBin/
+#Maven#
+target/
+#IDEA#
+.idea
+*.iml
+#Eclipse#
+.settings/
+.classpath
+.project
