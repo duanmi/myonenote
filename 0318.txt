@@ -1,0 +1,842 @@
+﻿2019-03-18 11:47:54 621|NORMAL|ucc_query_right_index_c|21899|51092307d0a08465172922042766|exec sql[SELECT Fpackage_id, Fservice_id, Fbank_type, Fname, Fcnt, Fuse_desc, Fimg, Fscope, Fdetail, Fshow_type, Fclass_id, Fusing_url, Fusing_state, Fexplanation_url, Fcreate_time
+, Fmodify_time, Fstate, Fversion FROM ucc_db.t_right_service order by Fmodify_time]2019-03-18 11:47:54 622|NORMAL|ucc_query_right_index_c|21899|51092307d0a08465172922042766|SQL Query:754 us
+2019-03-18 11:47:54 623|NORMAL|ucc_query_right_index_c|21899|51092307d0a08465172922042766||ucc_query_right_index_c.cpp:463|service size = [56]
+2019-03-18 11:47:54 623|DEBUG|ucc_query_right_index_c|21899|51092307d0a08465172922042766||ucc_query_right_index_c.cpp:816|enter FUNC:[refreshRightPakcageShowLabel] LINE:[816] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:47:54 623|DEBUG|ucc_query_right_index_c|21899|51092307d0a08465172922042766||ucc_query_right_index_c.cpp:82|enter FUNC:[packReturnMsg] LINE:[82] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:47:54 623|ERROR|ucc_query_right_index_c|21899|51092307d0a08465172922042766||ucc_query_right_index_c.cpp:110|BI.response error, no items node
+2019-03-18 11:47:54 623|NORMAL|ucc_query_right_index_c|21899|51092307d0a08465172922042766||ucc_query_right_index_c.cpp:113|query recommend items failed, load package from config file
+2019-03-18 11:47:54 624|DEBUG|ucc_query_right_index_c|21899|51092307d0a08465172922042766||preprocess_data.cpp:164|enter FUNC:[getCardTempInfo] LINE:[164] FILE:[../comm/preprocess_data.cpp]
+2019-03-18 11:47:54 624|DEBUG|ucc_query_right_index_c|21899|51092307d0a08465172922042766||ucc_query_right_index_c.cpp:871|enter FUNC:[sortCardTempListByBIRet] LINE:[871] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:47:54 624|NORMAL|ucc_query_right_index_c|21899|51092307d0a08465172922042766||ucc_query_right_index_c.cpp:884|BI recomment cardTemp is empty
+2019-03-18 11:47:54 624|DEBUG|ucc_query_right_index_c|21899|51092307d0a08465172922042766||ucc_query_right_index_c.cpp:871|enter FUNC:[sortCardTempListByBIRet] LINE:[871] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:47:54 624|NORMAL|ucc_query_right_index_c|21899|51092307d0a08465172922042766||ucc_query_right_index_c.cpp:884|BI recomment cardTemp is empty
+2019-03-18 11:47:54 624|DEBUG|ucc_query_right_index_c|21899|51092307d0a08465172922042766||preprocess_data.cpp:171|enter FUNC:[getChannelDefine] LINE:[171] FILE:[../comm/preprocess_data.cpp]
+2019-03-18 11:47:54 624|DEBUG|ucc_query_right_index_c|21899|51092307d0a08465172922042766||preprocess_data.cpp:171|enter FUNC:[getChannelDefine] LINE:[171] FILE:[../comm/preprocess_data.cpp]
+2019-03-18 11:47:54 625|DEBUG|ucc_query_right_index_c|21899|51092307d0a08465172922042766||ucc_query_right_index_c.cpp:59|enter FUNC:[~UccQueryRightIndex] LINE:[59] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:47:54 625|DEBUG|ucc_query_right_index_c|21899|51092307d0a08465172922042766|reset the connection...
+2019-03-18 11:47:54 625|DEBUG|ucc_query_right_index_c|21899|51092307d0a08465172922042766||ucc_select_bank_c.cpp:47|enter FUNC:[~UccSelectBank] LINE:[47] FILE:[../service/ucc_select_bank_c.cpp]
+2019-03-18 11:47:54 626|NORMAL|ucc_query_right_index_c|21899|51092307d0a08465172922042766||runinfo.cpp:159||out|30|result=0&res_info=ok&repay_gray_4951=0&repay_gray_4952=0&repay_gray_4953=0&repay_gray_4954=0&bankTypes=["4951","4954"]%0a&cardState=0&cityList={"上海":["上
+海"],"云南":["大理","昆明","曲靖","玉溪","红河"],"内蒙古":["呼和浩特","包头","鄂尔多斯","赤峰"],"北京":["北京"],"吉林":["长春","吉林"],"四川":["眉山","成都","德阳","南充","宜宾","达州"],"天津":["天津"],"宁夏":["银川"],"安徽":["合肥","芜湖","安庆","滁州","六安"],"山东":["济南","济宁","淄博","滨州","威海","东营","青岛","日照","莱芜","潍坊","聊城","枣庄","临沂","烟台"],"山西":["太原","临汾","长治","大同","柳林县","吕梁"],"广东":["广州","深圳","珠海","佛山","东莞","中山","江门","潮州","河源","惠州","揭阳","茂名","梅州","清远","汕头","韶关","阳江","湛江","云浮","肇庆"],"广西":["南宁","柳州","钦州","桂林"],"新疆":["昌吉","乌鲁木齐","喀什"],"江苏":["南京","常州","南通","无锡","镇江","泰州","盐城","淮安","扬州","苏州","徐州"],"江西":["南昌","赣州","九江","萍乡"],"河北":["石家庄","唐山","廊坊","沧州","保定","承德","黄骅","涿州"],"河南":["郑州","安阳","焦作","洛阳","平顶山","三门峡","新乡","南阳","商丘","汝州","信阳"],"浙江":["杭州","嘉兴","金华","宁波","台州","温州","义乌","绍兴","慈溪","奉化","瑞安","湖州","衢州","富阳","丽水"],"海南":["海口","三亚"],"湖北":["武汉","黄石","宜昌","襄阳","十堰","鄂州"],"湖南":["长沙","岳阳","常德","衡阳","湘潭","株洲","邵阳"],"甘肃":["兰州"],"福建":["福州","泉州","厦门","莆田","龙岩","漳州","宁德","三明"],"贵州":["贵阳","遵义"],"辽宁":["沈阳","鞍山","本溪","大连","葫芦岛","盘锦","营口","丹东","辽阳","抚顺"],"重庆":["重庆"],"陕西":["西安","咸阳","榆林","宝鸡","渭南"],"青海":["西宁","海东"],"黑龙江":["哈尔滨","大庆","牡丹江","齐齐哈尔"]}%0a&bi={}&biCardTmp={}&card_images={"4951":[{"cardLevel":"金卡","cardOrg":"银联","imageId":"D0001","imageUrl":"card_tuanyuan","inner_imageId":"weplus_tuanyuan_4951","name":"","shortDesc":"微加银联团员卡","special_imageId":""},{"cardLevel":"金卡","cardOrg":"银联","imageId":"D0004","imageUrl":"card_xy","inner_imageId":"weplus_xy_4951","name":"","shortDesc":"微加银联蓝色梦想卡","special_imageId":""},{"cardLevel":"金卡","cardOrg":"银联","imageId":"D0003","imageUrl":"card_xy_pink","inner_imageId":"weplus_xy_pink_4951","name":"","shortDesc":"微加银联粉色青春卡","special_imageId":""}],"4954":[{"cardLevel":"金卡","cardOrg":"银联","imageId":"CS0521","imageUrl":"card","inner_imageId":"weplus_CUPstandard_4954","name":"","shortDesc":"微加银联标准卡黑卡","special_imageId":""}]}%0a&recommend=[{"Fclass_id":"BI","Fclass_name":"个性尊享","Fclass_url":"BI_URL","right_packages":[{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"滴滴快车10元现金券4张","Fimg":"icon-didi","Fname":"出行有礼","Fpackage_id":"100001","Ftitle1":"滴滴快车10元现金券","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"腾讯视频VIP会员月卡3张","Fimg":"icon-qqvideo","Fname":"视听享受","Fpackage_id":"100004","Ftitle1":"腾讯视频VIP会员月卡","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满299元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"全国电影通用兑换券2张","Fimg":"icon-film","Fname":"影视大片","Fpackage_id":"100007","Ftitle1":"全国电影兑换券","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"电商消费奖励5倍积分","Fimg":"icon-ecommerce","Fname":"网购积分","Fpackage_id":"100016","Ftitle1":"电商消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"超市/便利店消费奖励5倍积分","Fimg":"icon-supermarket","Fname":"超市积分","Fpackage_id":"100017","Ftitle1":"超市消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"丝芙兰/屈臣氏等消费奖励5倍积分","Fimg":"icon-cosmetic","Fname":"美妆积分","Fpackage_id":"100018","Ftitle1":"美妆消费奖励5倍积分","packageLabel":"","required":0}]}]%0a&right_package=[{"Fclass_id":"10002","Fclass_name":"娱乐","Fclass_url":"","right_packages":[{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"腾讯视频VIP会员月卡3张","Fimg":"icon-qqvideo","Fname":"视听享受","Fpackage_id":"100004","Ftitle1":"腾讯视频VIP会员月卡","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"优酷视频VIP会员月卡3张","Fimg":"icon-youku","Fname":"视听享受","Fpackage_id":"100005","Ftitle1":"优酷视频VIP会员月卡","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"爱奇艺视频VIP会员月卡3张","Fimg":"icon-iqiyi","Fname":"视听享受","Fpackage_id":"100006","Ftitle1":"爱奇艺视频VIP会员月卡","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满299元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"全国电影通用兑换券2张","Fimg":"icon-film","Fname":"影视大片","Fpackage_id":"100007","Ftitle1":"全国电影兑换券","packageLabel":"","required":0}]},{"Fclass_id":"10003","Fclass_name":"美食","Fclass_url":"","right_packages":[{"Fattain_regular":"线下刷卡单笔满699元领取","Fbank_type":"4951","Fdesc":"小熊0.6L滴漏咖啡机1台","Fimg":"icon-coffeegift","Fname":"咖啡制造","Fpackage_id":"100029","Ftitle1":"小熊0.6L滴漏咖啡机","packageLabel":"","required":0}]},{"Fclass_id":"10004","Fclass_name":"车主","Fclass_url":"","right_packages":[{"Fattain_regular":"线下刷卡单笔满199元领取1次","Fbank_type":"4951","Fdesc":"车点点25元5座洗车券1张","Fimg":"icon-carcleaning","Fname":"洗车有礼","Fpackage_id":"100021","Ftitle1":"车点点25元5座洗车券","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4951","Fdesc":"加油消费奖励2倍积分","Fimg":"icon-gas","Fname":"加油积分","Fpackage_id":"100039","Ftitle1":"加油消费积分翻倍","packageLabel":"","required":0}]},{"Fclass_id":"10006","Fclass_name":"购物","Fclass_url":"","right_packages":[{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"电商消费奖励5倍积分","Fimg":"icon-ecommerce","Fname":"网购积分","Fpackage_id":"100016","Ftitle1":"电商消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"超市/便利店消费奖励5倍积分","Fimg":"icon-supermarket","Fname":"超市积分","Fpackage_id":"100017","Ftitle1":"超市消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"丝芙兰/屈臣氏等消费奖励5倍积分","Fimg":"icon-cosmetic","Fname":"美妆积分","Fpackage_id":"100018","Ftitle1":"美妆消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4951","Fdesc":"微信支付奖励2倍积分","Fimg":"icon-wechatpoints","Fname":"微信积分","Fpackage_id":"100038","Ftitle1":"微信支付积分翻倍","packageLabel":"","required":0}]},{"Fclass_id":"10008","Fclass_name":"安全","Fclass_url":"","right_packages":[{"Fattain_regular":"","Fbank_type":"4951","Fdesc":"交易安全卫士3个月","Fimg":"icon-protection","Fname":"交易安全","Fpackage_id":"100040","Ftitle1":"交易安全卫士","packageLabel":"","required":0}]},{"Fclass_id":"10001","Fclass_name":"出行","Fclass_url":"","right_packages":[{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"滴滴快车10元现金券4张","Fimg":"icon-didi","Fname":"出行有礼","Fpackage_id":"100001","Ftitle1":"滴滴快车10元现金券","packageLabel":"","required":0},{"Fattain_regular":"线下刷卡单笔满699元领取package","Fbank_type":"4951","Fdesc":"龙腾机场贵宾厅服务1人次","Fimg":"icon-dragonpass","Fname":"机场贵宾package","Fpackage_id":"100028","Ftitle1":"龙腾机场贵宾厅服务pacgage","packageLabel":"","required":0}]}]%0a&channelAdImage=
+2019-03-18 11:47:56 268|NORMAL|ucc_query_white_list_c|21899|51092307d0a08481956242042715||runinfo.cpp:130||in|CgiName=ucc_mp_right_index.fcgi&MSG_NO=51092307d0a08481956242042715&head_u=085e9858e9867e22d5ec247a5&request_text=pHZ4EAAA-P2jGiD14aHEjn-0Hj4DYhrJCtjh3Gej9j8CE-
+ByuUysHJh8udUA9VyKL5Z-sv4ZuJdECqv4iDMhrzYp0Sh2UevSImL52OWCIzNqAZChqcfa7-mq_SW6_sJgSuUG6OzNd6zKuvYM4-nlMV7mVIbgjMVv5e_44EOM5P8hK6jMa3HsLCiijzgIpJJzhWwuvGjJUQ7At3rT3l-2cA%3D%3D&request_type=105617&sp_id=2000000000&ver=12019-03-18 11:47:56 268|DEBUG|ucc_query_white_list_c|21899|51092307d0a08481956242042715||ucc_itg_service.cpp:343|decode input: accid=085e9858e9867e22d5ec247a5&city=北京市&major_channel=&minor_channel=0001&unionid=o1oBiwlnFuRdQ-TlEpXeeIlLhhzY&abstract=21l4DraZAkZxMzHr9mO
+h6GOlkck%3D2019-03-18 11:47:56 268|NORMAL|ucc_query_white_list_c|21899|51092307d0a08481956242042715|exec sql[SELECT Fchannel_id, Fchannel_name, Fbank_type, Fcard_temp_list, Fpackage_list, Flock_package_list,Fis_check_white,Fis_channnelid_to_bank, Fstandby4 FROM ucc_db.t_channel_at
+tri where Fstate=3 and Fchannel_id='0001' and Fstandby4!='' limit 1]2019-03-18 11:47:56 269|NORMAL|ucc_query_white_list_c|21899|51092307d0a08481956242042715|SQL Query:826 us
+2019-03-18 11:47:56 269|DEBUG|ucc_query_white_list_c|21899|51092307d0a08481956242042715||ucc_query_white_list_c.cpp:59|major channel: 0001, minor channel: 0001
+2019-03-18 11:47:56 269|NORMAL|ucc_query_white_list_c|21899|51092307d0a08481956242042715|exec sql[SELECT Faccid, Fstate, Ftype, Fcreate_time, Fmodify_time, Funionid, Fsupport_banks FROM ucc_db.t_spec_user_2 WHERE Faccid='085e9858e9867e22d5ec247a5' and Fstate=1 limit 2]
+2019-03-18 11:47:56 270|NORMAL|ucc_query_white_list_c|21899|51092307d0a08481956242042715|SQL Query:456 us
+2019-03-18 11:47:56 270|DEBUG|ucc_query_white_list_c|21899|51092307d0a08481956242042715|reset the connection...
+2019-03-18 11:47:56 270|NORMAL|ucc_query_white_list_c|21899|51092307d0a08481956242042715||runinfo.cpp:159||out|1|result=0&res_info=ok&passed=1
+
+2019-03-18 11:47:56 271|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715||runinfo.cpp:130||in|CgiName=ucc_mp_right_index.fcgi&MSG_NO=51092307d0a08481956242042715&head_u=085e9858e9867e22d5ec247a5&request_text=pHZ4EAAA-P2jGiD14aHEjn-0Hj4DYhrJCtjh3Gej9j95B
+Bon-grOuwkRjM0_7HI4mnf6vCICGxyiWmJhgUSN6lw41F2HoHGkAno7cqn68Sutx1HuAjQcmSg3EAplsCWau5_BWU0kZ43cIrBgmVBHW3uia1xS4U3Ft1nW3IC6UWgZriWCPthp_MV0fbHnlk4l&request_type=107652&sp_id=2000000000&ver=12019-03-18 11:47:56 271|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:51|enter FUNC:[UccQueryRightIndex] LINE:[51] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:47:56 271|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_itg_service.cpp:343|decode input: accid=085e9858e9867e22d5ec247a5&apply_channel=0001&city=北京市&unionid=o1oBiwlnFuRdQ-TlEpXeeIlLhhzY&abstract=eQctKcaYS2bMpQD7kBnM3AvKTM8%3D
+2019-03-18 11:47:56 271|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:66|enter FUNC:[parseInputMsg] LINE:[66] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:47:56 271|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:336|enter FUNC:[excute] LINE:[336] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:47:56 271|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:673|enter FUNC:[qryBankByCurrCity] LINE:[673] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:47:56 271|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715|exec sql[ SELECT Fbank_type FROM ucc_db.t_bank_position where LOCATE(Fcity,'北京市')>0 ]
+2019-03-18 11:47:56 272|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715|SQL Query:529 us
+2019-03-18 11:47:56 272|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:353|select by city, bank type[4951|4952|4953|4954|4955]
+2019-03-18 11:47:56 272|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_select_bank_c.cpp:52|enter FUNC:[selectBankByChannel] LINE:[52] FILE:[../service/ucc_select_bank_c.cpp]
+2019-03-18 11:47:56 272|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||preprocess_data.cpp:134|enter FUNC:[getChannelAttri] LINE:[134] FILE:[../comm/preprocess_data.cpp]
+2019-03-18 11:47:56 272|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:363|select by channel, bank[4951|4952|4953|4954|4955]
+2019-03-18 11:47:56 272|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715|exec sql[SELECT Fbank_type FROM ucc_db.t_apply_recode_3 WHERE Funionid='o1oBiwlnFuRdQ-TlEpXeeIlLhhzY' and FState!=6 ORDER BY Fcreate_time ASC]
+2019-03-18 11:47:56 273|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715|SQL Query:514 us
+2019-03-18 11:47:56 273|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:375|select by apply, bank[4951|4954]
+2019-03-18 11:47:56 273|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||bi_beehive_client.cpp:56|uin: 085e9858e9867e22d5ec247a5@wx.tenpay.com, md5: 70adeee15cf74ca7b8f5b45abfa16e2a, rule: 000-fff
+2019-03-18 11:47:56 273|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||bi_beehive_client.cpp:78|user 085e9858e9867e22d5ec247a5@wx.tenpay.com enabled to use beehive? 1
+2019-03-18 11:47:56 273|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:381|call bi beehive for user 085e9858e9867e22d5ec247a5@wx.tenpay.com
+2019-03-18 11:47:56 273|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||bi_beehive_client.cpp:98|strSignSrc=[uzM1ffsKJKyGun665MzlUVxH9CFvgVEL2019031810.125.48.146] post=[{"channelId":"0001","fappid":"AsOqvhZk","fuin":"085e9858e9867e22d5ec247a5@wx.tenpa
+y.com","lbscity":"北京市","sceneId":"1","sign":"e135e9bc31d406d2374567191dfa346b","timestamp":"20190318"}]
+2019-03-18 11:47:56 273|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715|updateHostInfo use default config, host:10.167.2.28, port:8080, timeout:1
+2019-03-18 11:47:56 273|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715|http req:POST /crisk/wePlusCard/getBankList.do HTTP/1.0
+Host: 10.167.2.28
+Accept: */*
+Content-Length: 191
+Content-Type: application/json
+
+{"channelId":"0001","fappid":"AsOqvhZk","fuin":"085e9858e9867e22d5ec247a5@wx.tenpay.com","lbscity":"北京市","sceneId":"1","sign":"e135e9bc31d406d2374567191dfa346b","timestamp":"20190318"}
+
+2019-03-18 11:47:56 273|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715|http://10.167.2.28:8080//crisk/wePlusCard/getBankList.do
+POST /crisk/wePlusCard/getBankList.do HTTP/1.0
+Host: 10.167.2.28
+Accept: */*
+Content-Length: 191
+Content-Type: application/json
+
+{"channelId":"0001","fappid":"AsOqvhZk","fuin":"085e9858e9867e22d5ec247a5@wx.tenpay.com","lbscity":"北京市","sceneId":"1","sign":"e135e9bc31d406d2374567191dfa346b","timestamp":"20190318"}
+
+2019-03-18 11:47:56 282|ERROR|ucc_query_right_index_c|21899|51092307d0a08481956242042715|create socket err:Connection refused [socket.cpp: 330]
+2019-03-18 11:47:56 282|ERROR|ucc_query_right_index_c|21899|51092307d0a08481956242042715|timecost:8729, BgHttpCall Fail
+2019-03-18 11:47:56 282|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715|reset the connection...
+2019-03-18 11:47:56 282|ERROR|ucc_query_right_index_c|21899|51092307d0a08481956242042715||bi_beehive_client.cpp:134|exception when calling BI beehive service, e.what=Failed to post data
+2019-03-18 11:47:56 282|ERROR|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:399|failed to get recommended bank types for 085e9858e9867e22d5ec247a5@wx.tenpay.com: 868121331 Failed to post data
+2019-03-18 11:47:56 282|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:407|select by BI, bank[4951|4954]
+2019-03-18 11:47:56 282|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:835|enter FUNC:[getAllCardTemp] LINE:[835] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:47:56 282|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||preprocess_data.cpp:164|enter FUNC:[getCardTempInfo] LINE:[164] FILE:[../comm/preprocess_data.cpp]
+2019-03-18 11:47:56 282|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:850|channel=微加卡-公众号-卡片申请, cardNum=D0001
+2019-03-18 11:47:56 282|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:850|channel=微加卡-公众号-卡片申请, cardNum=D0004
+2019-03-18 11:47:56 282|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:850|channel=微加卡-公众号-卡片申请, cardNum=D0003
+2019-03-18 11:47:56 282|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:774|enter FUNC:[unionBIRecommCardTemp] LINE:[774] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:47:56 282|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_itg_tool.cpp:538|strSign=[e1547057e58c0ae342e8c4a959d0406385cef3d2155288087610.125.48.146] post param=[fuin=085e9858e9867e22d5ec247a5@wx.tenpay.com&timestamp=1552880876&sign=7f
+351e8d248146ad5f63cae6067b22ac&fappId=10010&adPos=100100006&validItems=D0001,D0004,D0003]2019-03-18 11:47:56 282|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715|updateHostInfo use default config, host:10.241.137.148, port:8080, timeout:1
+2019-03-18 11:47:56 282|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715|http req:GET /recommend/api/recommend.do?fuin=085e9858e9867e22d5ec247a5@wx.tenpay.com&timestamp=1552880876&sign=7f351e8d248146ad5f63cae6067b22ac&fappId=10010&adPos=100100006&validIt
+ems=D0001,D0004,D0003 HTTP/1.0Host:10.241.137.148
+Accept:*/*
+Referer:
+
+
+2019-03-18 11:47:56 288|ERROR|ucc_query_right_index_c|21899|51092307d0a08481956242042715|create socket err:Connection refused [socket.cpp: 330]
+2019-03-18 11:47:56 288|ERROR|ucc_query_right_index_c|21899|51092307d0a08481956242042715|BgHttpCall Fail, timecost:5840
+2019-03-18 11:47:56 288|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715|reset the connection...
+2019-03-18 11:47:56 288|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715|reset the connection...
+2019-03-18 11:47:56 288|ERROR|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:803|callBiRecommend error[868112011, bi recommand http request error]
+2019-03-18 11:47:56 288|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715|send warning errCode[868112011] errMsg[<ERROR>
+query bi cardTemp error:bi recommand http request error
+</ERROR>]
+2019-03-18 11:47:56 288|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:641|enter FUNC:[qryCityList] LINE:[641] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:47:56 288|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715|exec sql[ SELECT Fprovince,Fcity FROM ucc_db.t_bank_position where Fbank_type like '%4951%' or Fbank_type like '%4954%';]
+2019-03-18 11:47:56 289|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715|SQL Query:636 us
+2019-03-18 11:47:56 290|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:469|enter FUNC:[queryFidPolarRecommend] LINE:[469] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:47:56 290|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:591|enter FUNC:[GetLocalIP] LINE:[591] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:47:56 290|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:496|strSign=[e1547057e58c0ae342e8c4a959d0406385cef3d22019031810.125.48.146] post param=[timestamp=20190318&adPos=100100001&bankid=4951,4954&fappId=10010
+&fuin=085e9858e9867e22d5ec247a5@wx.tenpay.com&sign=c0a787b30d926b40150e558634cb8e6a&channelId=0001]2019-03-18 11:47:56 290|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715|updateHostInfo use default config, host:10.241.137.148, port:8080, timeout:1
+2019-03-18 11:47:56 290|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715|http req:GET /recommend/api/recommend.do?timestamp=20190318&adPos=100100001&bankid=4951,4954&fappId=10010&fuin=085e9858e9867e22d5ec247a5@wx.tenpay.com&sign=c0a787b30d926b40150e55863
+4cb8e6a&channelId=0001 HTTP/1.0Host:10.241.137.148
+Accept:*/*
+Referer:
+
+
+2019-03-18 11:47:56 300|ERROR|ucc_query_right_index_c|21899|51092307d0a08481956242042715|create socket err:Connection refused [socket.cpp: 330]
+2019-03-18 11:47:56 300|ERROR|ucc_query_right_index_c|21899|51092307d0a08481956242042715|BgHttpCall Fail, timecost:9281
+2019-03-18 11:47:56 300|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715|reset the connection...
+2019-03-18 11:47:56 300|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715|reset the connection...
+2019-03-18 11:47:56 300|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:451|enter FUNC:[queryDataFromDb] LINE:[451] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:47:56 300|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:537|enter FUNC:[genQryCondition] LINE:[537] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:47:56 300|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715|exec sql[ SELECT Fpackage_id, Fbank_type, Fname, Ftitle1, Fdesc,  Fimg, Fclass_id, Fattain_regular, Fcreate_time, Fmodify_time,Fcnt,Fshow_label,Flabel_show_time FROM ucc_db.t_right
+_package   where  Fstate=3  and Fpackage_id in ('100001','100004','100005','100006','100007','100009','100012','100013','100014','100016','100017','100018','100021','100028','100029','100038','100039','100040','100045')  and  (  Fbank_type like '%4951%'  or  Fbank_type like '%4954%'  )  and (Fpackage_id in (select Fpackage_id from ucc_db.t_right_service where Fstate=3  and  (  Fbank_type = '4951'  or  Fbank_type = '4954'  )  ) or Fpackage_type=2)   order by Fmodify_time ASC; ]2019-03-18 11:47:56 307|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715|SQL Query:7433 us
+2019-03-18 11:47:56 307|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:453|m_RightPackageMap size = [14]
+2019-03-18 11:47:56 307|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:454|filterRightPackageByChannel, m_RightPackageMap size = [14]
+2019-03-18 11:47:56 307|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715|exec sql[SELECT Fclass_id, Fclass_name, Fclass_url, Fcreate_time, Fmodify_time, Fstandby1, Fstandby2 FROM ucc_db.t_package_class  where Fstate=3  order by Fmodify_time DESC ;]
+2019-03-18 11:47:56 314|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715|SQL Query:6428 us
+2019-03-18 11:47:56 314|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:457|m_RightPackageClassList size = [10]
+2019-03-18 11:47:56 314|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715|exec sql[SELECT Fcombo_id, Fcombo_name, Fcombo_url, Fpackage_list, Fcreate_time, Fmodify_time, Fstandby1, Fstandby2 FROM ucc_db.t_package_combo order by Fmodify_time DESC ;]
+2019-03-18 11:47:56 314|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715|SQL Query:555 us
+2019-03-18 11:47:56 314|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:460|m_RightPackageComboList size = [0]
+2019-03-18 11:47:56 314|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715|exec sql[SELECT Fpackage_id, Fservice_id, Fbank_type, Fname, Fcnt, Fuse_desc, Fimg, Fscope, Fdetail, Fshow_type, Fclass_id, Fusing_url, Fusing_state, Fexplanation_url, Fcreate_time
+, Fmodify_time, Fstate, Fversion FROM ucc_db.t_right_service order by Fmodify_time]2019-03-18 11:47:56 315|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715|SQL Query:787 us
+2019-03-18 11:47:56 317|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:463|service size = [56]
+2019-03-18 11:47:56 317|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:816|enter FUNC:[refreshRightPakcageShowLabel] LINE:[816] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:47:56 317|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:82|enter FUNC:[packReturnMsg] LINE:[82] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:47:56 317|ERROR|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:110|BI.response error, no items node
+2019-03-18 11:47:56 317|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:113|query recommend items failed, load package from config file
+2019-03-18 11:47:56 318|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||preprocess_data.cpp:164|enter FUNC:[getCardTempInfo] LINE:[164] FILE:[../comm/preprocess_data.cpp]
+2019-03-18 11:47:56 318|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:871|enter FUNC:[sortCardTempListByBIRet] LINE:[871] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:47:56 318|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:884|BI recomment cardTemp is empty
+2019-03-18 11:47:56 318|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:871|enter FUNC:[sortCardTempListByBIRet] LINE:[871] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:47:56 318|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:884|BI recomment cardTemp is empty
+2019-03-18 11:47:56 318|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||preprocess_data.cpp:171|enter FUNC:[getChannelDefine] LINE:[171] FILE:[../comm/preprocess_data.cpp]
+2019-03-18 11:47:56 318|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||preprocess_data.cpp:171|enter FUNC:[getChannelDefine] LINE:[171] FILE:[../comm/preprocess_data.cpp]
+2019-03-18 11:47:56 319|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_query_right_index_c.cpp:59|enter FUNC:[~UccQueryRightIndex] LINE:[59] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:47:56 319|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715|reset the connection...
+2019-03-18 11:47:56 319|DEBUG|ucc_query_right_index_c|21899|51092307d0a08481956242042715||ucc_select_bank_c.cpp:47|enter FUNC:[~UccSelectBank] LINE:[47] FILE:[../service/ucc_select_bank_c.cpp]
+2019-03-18 11:47:56 319|NORMAL|ucc_query_right_index_c|21899|51092307d0a08481956242042715||runinfo.cpp:159||out|48|result=0&res_info=ok&repay_gray_4951=0&repay_gray_4952=0&repay_gray_4953=0&repay_gray_4954=0&bankTypes=["4951","4954"]%0a&cardState=0&cityList={"上海":["上
+海"],"云南":["大理","昆明","曲靖","玉溪","红河"],"内蒙古":["呼和浩特","包头","鄂尔多斯","赤峰"],"北京":["北京"],"吉林":["长春","吉林"],"四川":["眉山","成都","德阳","南充","宜宾","达州"],"天津":["天津"],"宁夏":["银川"],"安徽":["合肥","芜湖","安庆","滁州","六安"],"山东":["济南","济宁","淄博","滨州","威海","东营","青岛","日照","莱芜","潍坊","聊城","枣庄","临沂","烟台"],"山西":["太原","临汾","长治","大同","柳林县","吕梁"],"广东":["广州","深圳","珠海","佛山","东莞","中山","江门","潮州","河源","惠州","揭阳","茂名","梅州","清远","汕头","韶关","阳江","湛江","云浮","肇庆"],"广西":["南宁","柳州","钦州","桂林"],"新疆":["昌吉","乌鲁木齐","喀什"],"江苏":["南京","常州","南通","无锡","镇江","泰州","盐城","淮安","扬州","苏州","徐州"],"江西":["南昌","赣州","九江","萍乡"],"河北":["石家庄","唐山","廊坊","沧州","保定","承德","黄骅","涿州"],"河南":["郑州","安阳","焦作","洛阳","平顶山","三门峡","新乡","南阳","商丘","汝州","信阳"],"浙江":["杭州","嘉兴","金华","宁波","台州","温州","义乌","绍兴","慈溪","奉化","瑞安","湖州","衢州","富阳","丽水"],"海南":["海口","三亚"],"湖北":["武汉","黄石","宜昌","襄阳","十堰","鄂州"],"湖南":["长沙","岳阳","常德","衡阳","湘潭","株洲","邵阳"],"甘肃":["兰州"],"福建":["福州","泉州","厦门","莆田","龙岩","漳州","宁德","三明"],"贵州":["贵阳","遵义"],"辽宁":["沈阳","鞍山","本溪","大连","葫芦岛","盘锦","营口","丹东","辽阳","抚顺"],"重庆":["重庆"],"陕西":["西安","咸阳","榆林","宝鸡","渭南"],"青海":["西宁","海东"],"黑龙江":["哈尔滨","大庆","牡丹江","齐齐哈尔"]}%0a&bi={}&biCardTmp={}&card_images={"4951":[{"cardLevel":"金卡","cardOrg":"银联","imageId":"D0001","imageUrl":"card_tuanyuan","inner_imageId":"weplus_tuanyuan_4951","name":"","shortDesc":"微加银联团员卡","special_imageId":""},{"cardLevel":"金卡","cardOrg":"银联","imageId":"D0004","imageUrl":"card_xy","inner_imageId":"weplus_xy_4951","name":"","shortDesc":"微加银联蓝色梦想卡","special_imageId":""},{"cardLevel":"金卡","cardOrg":"银联","imageId":"D0003","imageUrl":"card_xy_pink","inner_imageId":"weplus_xy_pink_4951","name":"","shortDesc":"微加银联粉色青春卡","special_imageId":""}],"4954":[{"cardLevel":"金卡","cardOrg":"银联","imageId":"CS0521","imageUrl":"card","inner_imageId":"weplus_CUPstandard_4954","name":"","shortDesc":"微加银联标准卡黑卡","special_imageId":""}]}%0a&recommend=[{"Fclass_id":"BI","Fclass_name":"个性尊享","Fclass_url":"BI_URL","right_packages":[{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"滴滴快车10元现金券4张","Fimg":"icon-didi","Fname":"出行有礼","Fpackage_id":"100001","Ftitle1":"滴滴快车10元现金券","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"腾讯视频VIP会员月卡3张","Fimg":"icon-qqvideo","Fname":"视听享受","Fpackage_id":"100004","Ftitle1":"腾讯视频VIP会员月卡","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满299元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"全国电影通用兑换券2张","Fimg":"icon-film","Fname":"影视大片","Fpackage_id":"100007","Ftitle1":"全国电影兑换券","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"电商消费奖励5倍积分","Fimg":"icon-ecommerce","Fname":"网购积分","Fpackage_id":"100016","Ftitle1":"电商消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"超市/便利店消费奖励5倍积分","Fimg":"icon-supermarket","Fname":"超市积分","Fpackage_id":"100017","Ftitle1":"超市消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"丝芙兰/屈臣氏等消费奖励5倍积分","Fimg":"icon-cosmetic","Fname":"美妆积分","Fpackage_id":"100018","Ftitle1":"美妆消费奖励5倍积分","packageLabel":"","required":0}]}]%0a&right_package=[{"Fclass_id":"10002","Fclass_name":"娱乐","Fclass_url":"","right_packages":[{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"腾讯视频VIP会员月卡3张","Fimg":"icon-qqvideo","Fname":"视听享受","Fpackage_id":"100004","Ftitle1":"腾讯视频VIP会员月卡","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"优酷视频VIP会员月卡3张","Fimg":"icon-youku","Fname":"视听享受","Fpackage_id":"100005","Ftitle1":"优酷视频VIP会员月卡","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"爱奇艺视频VIP会员月卡3张","Fimg":"icon-iqiyi","Fname":"视听享受","Fpackage_id":"100006","Ftitle1":"爱奇艺视频VIP会员月卡","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满299元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"全国电影通用兑换券2张","Fimg":"icon-film","Fname":"影视大片","Fpackage_id":"100007","Ftitle1":"全国电影兑换券","packageLabel":"","required":0}]},{"Fclass_id":"10003","Fclass_name":"美食","Fclass_url":"","right_packages":[{"Fattain_regular":"线下刷卡单笔满699元领取","Fbank_type":"4951","Fdesc":"小熊0.6L滴漏咖啡机1台","Fimg":"icon-coffeegift","Fname":"咖啡制造","Fpackage_id":"100029","Ftitle1":"小熊0.6L滴漏咖啡机","packageLabel":"","required":0}]},{"Fclass_id":"10004","Fclass_name":"车主","Fclass_url":"","right_packages":[{"Fattain_regular":"线下刷卡单笔满199元领取1次","Fbank_type":"4951","Fdesc":"车点点25元5座洗车券1张","Fimg":"icon-carcleaning","Fname":"洗车有礼","Fpackage_id":"100021","Ftitle1":"车点点25元5座洗车券","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4951","Fdesc":"加油消费奖励2倍积分","Fimg":"icon-gas","Fname":"加油积分","Fpackage_id":"100039","Ftitle1":"加油消费积分翻倍","packageLabel":"","required":0}]},{"Fclass_id":"10006","Fclass_name":"购物","Fclass_url":"","right_packages":[{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"电商消费奖励5倍积分","Fimg":"icon-ecommerce","Fname":"网购积分","Fpackage_id":"100016","Ftitle1":"电商消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"超市/便利店消费奖励5倍积分","Fimg":"icon-supermarket","Fname":"超市积分","Fpackage_id":"100017","Ftitle1":"超市消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"丝芙兰/屈臣氏等消费奖励5倍积分","Fimg":"icon-cosmetic","Fname":"美妆积分","Fpackage_id":"100018","Ftitle1":"美妆消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4951","Fdesc":"微信支付奖励2倍积分","Fimg":"icon-wechatpoints","Fname":"微信积分","Fpackage_id":"100038","Ftitle1":"微信支付积分翻倍","packageLabel":"","required":0}]},{"Fclass_id":"10008","Fclass_name":"安全","Fclass_url":"","right_packages":[{"Fattain_regular":"","Fbank_type":"4951","Fdesc":"交易安全卫士3个月","Fimg":"icon-protection","Fname":"交易安全","Fpackage_id":"100040","Ftitle1":"交易安全卫士","packageLabel":"","required":0}]},{"Fclass_id":"10001","Fclass_name":"出行","Fclass_url":"","right_packages":[{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"滴滴快车10元现金券4张","Fimg":"icon-didi","Fname":"出行有礼","Fpackage_id":"100001","Ftitle1":"滴滴快车10元现金券","packageLabel":"","required":0},{"Fattain_regular":"线下刷卡单笔满699元领取package","Fbank_type":"4951","Fdesc":"龙腾机场贵宾厅服务1人次","Fimg":"icon-dragonpass","Fname":"机场贵宾package","Fpackage_id":"100028","Ftitle1":"龙腾机场贵宾厅服务pacgage","packageLabel":"","required":0}]}]%0a&channelAdImage=
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2019-03-18 11:56:41 381|NORMAL|ucc_query_white_list_c|21899|51092307d0a13731257972213783||runinfo.cpp:130||in|CgiName=ucc_mp_right_index.fcgi&MSG_NO=51092307d0a13731257972213783&head_u=085e9858e9867e22d5ec247a5&request_text=pHZ4EAAA-P2jGiD14aHEjn-0Hj4DYhrJCtjh3Gej9j8CE-
+ByuUysHMfG5oBJ9KES5eTltId-4TIRAF2zWN9Qe6c5UqPT2D94siEp-Hph3bxQF8JbVSJRgi5UOOUy-AdR-P6_i-i5_ipqAJi3tg8CJsan7wHrJU76bqV46cuQzz15s7QIIUlKv10WAUFNqHA_5Xx1067XTwZ5eWVvt0zvlg%3D%3D&request_type=105617&sp_id=2000000000&ver=12019-03-18 11:56:41 382|DEBUG|ucc_query_white_list_c|21899|51092307d0a13731257972213783||ucc_itg_service.cpp:343|decode input: accid=085e9858e9867e22d5ec247a5&city=北京&major_channel=&minor_channel=0001&unionid=o1oBiwlnFuRdQ-TlEpXeeIlLhhzY&abstract=UhyJZplLoHVWA2a9P_Ecn
+u_veKs%3D2019-03-18 11:56:41 382|NORMAL|ucc_query_white_list_c|21899|51092307d0a13731257972213783|exec sql[SELECT Fchannel_id, Fchannel_name, Fbank_type, Fcard_temp_list, Fpackage_list, Flock_package_list,Fis_check_white,Fis_channnelid_to_bank, Fstandby4 FROM ucc_db.t_channel_at
+tri where Fstate=3 and Fchannel_id='0001' and Fstandby4!='' limit 1]2019-03-18 11:56:41 383|NORMAL|ucc_query_white_list_c|21899|51092307d0a13731257972213783|SQL Query:955 us
+2019-03-18 11:56:41 383|DEBUG|ucc_query_white_list_c|21899|51092307d0a13731257972213783||ucc_query_white_list_c.cpp:59|major channel: 0001, minor channel: 0001
+2019-03-18 11:56:41 383|NORMAL|ucc_query_white_list_c|21899|51092307d0a13731257972213783|exec sql[SELECT Faccid, Fstate, Ftype, Fcreate_time, Fmodify_time, Funionid, Fsupport_banks FROM ucc_db.t_spec_user_2 WHERE Faccid='085e9858e9867e22d5ec247a5' and Fstate=1 limit 2]
+2019-03-18 11:56:41 384|NORMAL|ucc_query_white_list_c|21899|51092307d0a13731257972213783|SQL Query:471 us
+2019-03-18 11:56:41 384|DEBUG|ucc_query_white_list_c|21899|51092307d0a13731257972213783|reset the connection...
+2019-03-18 11:56:41 384|NORMAL|ucc_query_white_list_c|21899|51092307d0a13731257972213783||runinfo.cpp:159||out|2|result=0&res_info=ok&passed=1
+
+2019-03-18 11:56:41 386|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783||runinfo.cpp:130||in|CgiName=ucc_mp_right_index.fcgi&MSG_NO=51092307d0a13731257972213783&head_u=085e9858e9867e22d5ec247a5&request_text=pHZ4EAAA-P2jGiD14aHEjn-0Hj4DYhrJCtjh3Gej9j95B
+Bon-grOuwkRjM0_7HI4mnf6vCICGxw-oetJ96pn8kY6oYWK8VZFpcpMQVd1QnWkSSuvNSbkwVKwIKlIJJLFbKZSC7xhc7VJ008pYj2pahR5W2qFA7PTaAM_w5kP745eAfLozKqpFhMmRjrhGynR&request_type=107652&sp_id=2000000000&ver=12019-03-18 11:56:41 386|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:51|enter FUNC:[UccQueryRightIndex] LINE:[51] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:41 386|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_itg_service.cpp:343|decode input: accid=085e9858e9867e22d5ec247a5&apply_channel=0001&city=北京&unionid=o1oBiwlnFuRdQ-TlEpXeeIlLhhzY&abstract=37PmB-32Fapu9Na7AKOHCn6zKeM%3D
+2019-03-18 11:56:41 386|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:66|enter FUNC:[parseInputMsg] LINE:[66] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:41 386|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:336|enter FUNC:[excute] LINE:[336] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:41 386|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:673|enter FUNC:[qryBankByCurrCity] LINE:[673] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:41 386|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783|exec sql[ SELECT Fbank_type FROM ucc_db.t_bank_position where LOCATE(Fcity,'北京')>0 ]
+2019-03-18 11:56:41 387|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783|SQL Query:551 us
+2019-03-18 11:56:41 387|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:353|select by city, bank type[4951|4952|4953|4954|4955]
+2019-03-18 11:56:41 387|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_select_bank_c.cpp:52|enter FUNC:[selectBankByChannel] LINE:[52] FILE:[../service/ucc_select_bank_c.cpp]
+2019-03-18 11:56:41 387|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:134|enter FUNC:[getChannelAttri] LINE:[134] FILE:[../comm/preprocess_data.cpp]
+2019-03-18 11:56:41 387|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:139|clear old data
+2019-03-18 11:56:41 387|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:27|enter FUNC:[LoadData] LINE:[27] FILE:[../comm/preprocess_data.cpp]
+2019-03-18 11:56:41 387|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783|exec sql[SELECT Fchannel_id, Fchannel_name, Fbank_type, Fcard_temp_list, Fpackage_list, Flock_package_list,Fis_check_white,Fis_channnelid_to_bank FROM ucc_db.t_channel_attri where 
+Fstate=3 ]2019-03-18 11:56:41 388|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783|SQL Query:716 us
+2019-03-18 11:56:41 388|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783|exec sql[SELECT Fcard_temp_list, Fdescribe, Ftemp_list from ucc_db.t_card_temp_list]
+2019-03-18 11:56:41 389|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783|SQL Query:427 us
+2019-03-18 11:56:41 389|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783|exec sql[SELECT Ftemp_name, Ftemp_id, Ftemp_img,Fcard_org,Fcard_level,Fcard_num,Fspecial_card_num,Fbank_type from ucc_db.t_card_temp_info]
+2019-03-18 11:56:41 389|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783|SQL Query:499 us
+2019-03-18 11:56:41 390|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783|exec sql[SELECT Fid, Fname, Flist from ucc_db.t_package_list]
+2019-03-18 11:56:41 391|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783|SQL Query:969 us
+2019-03-18 11:56:41 391|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783|exec sql[select Fid,Fchannel_id,Fchannel_name,Fstate,Fimage from ucc_db.t_channel where Fstate=3]
+2019-03-18 11:56:41 391|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783|SQL Query:458 us
+2019-03-18 11:56:41 391|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 391|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 391|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 391|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 391|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 392|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 392|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 392|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 392|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 392|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 392|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 392|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 392|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 392|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 392|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 392|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 392|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 392|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 392|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 392|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 392|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 392|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 392|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 392|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 392|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 392|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 393|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 393|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 393|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 393|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 393|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 393|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 393|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 393|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 393|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 393|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 393|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 393|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 393|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 393|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_chong
+2019-03-18 11:56:41 393|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_chong
+2019-03-18 11:56:41 393|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 393|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 393|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 393|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 393|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 393|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 393|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 394|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_chong
+2019-03-18 11:56:41 394|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_chong
+2019-03-18 11:56:41 394|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_chong
+2019-03-18 11:56:41 394|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_chong
+2019-03-18 11:56:41 394|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 394|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 394|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 394|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 394|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 394|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 394|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 394|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 394|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 394|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 394|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 394|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 394|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 394|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 394|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 394|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 394|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 394|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 395|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 395|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 395|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 395|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 395|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 395|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 395|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 395|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 395|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 395|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 395|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 395|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 395|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 395|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 395|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 395|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 395|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 395|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 395|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 395|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 395|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 395|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 395|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 395|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 396|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 396|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 396|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 396|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 396|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 396|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 396|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 396|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 396|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 396|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 396|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 396|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list_1111
+2019-03-18 11:56:41 396|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 396|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 396|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:86|benefit_list2
+2019-03-18 11:56:41 396|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:363|select by channel, bank[4951|4952|4953|4954|4955]
+2019-03-18 11:56:41 396|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783|exec sql[SELECT Fbank_type FROM ucc_db.t_apply_recode_3 WHERE Funionid='o1oBiwlnFuRdQ-TlEpXeeIlLhhzY' and FState!=6 ORDER BY Fcreate_time ASC]
+2019-03-18 11:56:41 397|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783|SQL Query:628 us
+2019-03-18 11:56:41 397|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:375|select by apply, bank[4951|4954]
+2019-03-18 11:56:41 397|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||bi_beehive_client.cpp:56|uin: 085e9858e9867e22d5ec247a5@wx.tenpay.com, md5: 70adeee15cf74ca7b8f5b45abfa16e2a, rule: 000-fff
+2019-03-18 11:56:41 397|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||bi_beehive_client.cpp:78|user 085e9858e9867e22d5ec247a5@wx.tenpay.com enabled to use beehive? 1
+2019-03-18 11:56:41 397|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:381|call bi beehive for user 085e9858e9867e22d5ec247a5@wx.tenpay.com
+2019-03-18 11:56:41 397|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||bi_beehive_client.cpp:98|strSignSrc=[uzM1ffsKJKyGun665MzlUVxH9CFvgVEL2019031810.125.48.146] post=[{"channelId":"0001","fappid":"AsOqvhZk","fuin":"085e9858e9867e22d5ec247a5@wx.tenpa
+y.com","lbscity":"北京","sceneId":"1","sign":"e135e9bc31d406d2374567191dfa346b","timestamp":"20190318"}]
+2019-03-18 11:56:41 530|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783|updateHostInfo use default config, host:10.167.2.28, port:8080, timeout:1
+2019-03-18 11:56:41 530|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783|http req:POST /crisk/wePlusCard/getBankList.do HTTP/1.0
+Host: 10.167.2.28
+Accept: */*
+Content-Length: 188
+Content-Type: application/json
+
+{"channelId":"0001","fappid":"AsOqvhZk","fuin":"085e9858e9867e22d5ec247a5@wx.tenpay.com","lbscity":"北京","sceneId":"1","sign":"e135e9bc31d406d2374567191dfa346b","timestamp":"20190318"}
+
+2019-03-18 11:56:41 530|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783|http://10.167.2.28:8080//crisk/wePlusCard/getBankList.do
+POST /crisk/wePlusCard/getBankList.do HTTP/1.0
+Host: 10.167.2.28
+Accept: */*
+Content-Length: 188
+Content-Type: application/json
+
+{"channelId":"0001","fappid":"AsOqvhZk","fuin":"085e9858e9867e22d5ec247a5@wx.tenpay.com","lbscity":"北京","sceneId":"1","sign":"e135e9bc31d406d2374567191dfa346b","timestamp":"20190318"}
+
+2019-03-18 11:56:41 538|ERROR|ucc_query_right_index_c|21899|51092307d0a13731257972213783|create socket err:Connection refused [socket.cpp: 330]
+2019-03-18 11:56:41 538|ERROR|ucc_query_right_index_c|21899|51092307d0a13731257972213783|timecost:7923, BgHttpCall Fail
+2019-03-18 11:56:41 538|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783|reset the connection...
+2019-03-18 11:56:41 538|ERROR|ucc_query_right_index_c|21899|51092307d0a13731257972213783||bi_beehive_client.cpp:134|exception when calling BI beehive service, e.what=Failed to post data
+2019-03-18 11:56:41 538|ERROR|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:399|failed to get recommended bank types for 085e9858e9867e22d5ec247a5@wx.tenpay.com: 868121331 Failed to post data
+2019-03-18 11:56:41 538|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:407|select by BI, bank[4951|4954]
+2019-03-18 11:56:41 538|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:835|enter FUNC:[getAllCardTemp] LINE:[835] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:41 538|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:164|enter FUNC:[getCardTempInfo] LINE:[164] FILE:[../comm/preprocess_data.cpp]
+2019-03-18 11:56:41 538|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:850|channel=微加卡-公众号-卡片申请, cardNum=D0001
+2019-03-18 11:56:41 538|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:850|channel=微加卡-公众号-卡片申请, cardNum=D0004
+2019-03-18 11:56:41 538|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:850|channel=微加卡-公众号-卡片申请, cardNum=D0003
+2019-03-18 11:56:41 538|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:774|enter FUNC:[unionBIRecommCardTemp] LINE:[774] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:41 538|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_itg_tool.cpp:538|strSign=[e1547057e58c0ae342e8c4a959d0406385cef3d2155288140110.125.48.146] post param=[fuin=085e9858e9867e22d5ec247a5@wx.tenpay.com&timestamp=1552881401&sign=54
+ebb59aaefd6f5a75c397b0778589df&fappId=10010&adPos=100100006&validItems=D0001,D0004,D0003]2019-03-18 11:56:41 538|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783|updateHostInfo from L5, host:10.209.2.209, port:8080
+2019-03-18 11:56:41 538|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783|http req:GET /recommend/api/recommend.do?fuin=085e9858e9867e22d5ec247a5@wx.tenpay.com&timestamp=1552881401&sign=54ebb59aaefd6f5a75c397b0778589df&fappId=10010&adPos=100100006&validIt
+ems=D0001,D0004,D0003 HTTP/1.0Host:10.209.2.209
+Accept:*/*
+Referer:
+
+
+2019-03-18 11:56:41 542|ERROR|ucc_query_right_index_c|21899|51092307d0a13731257972213783|create socket err:Connection refused [socket.cpp: 330]
+2019-03-18 11:56:41 542|ERROR|ucc_query_right_index_c|21899|51092307d0a13731257972213783|BgHttpCall Fail, timecost:3444
+2019-03-18 11:56:41 542|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783|reportResult, retcode:-1, timecost:3444
+2019-03-18 11:56:41 542|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783|reset the connection...
+2019-03-18 11:56:41 542|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783|reset the connection...
+2019-03-18 11:56:41 542|ERROR|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:803|callBiRecommend error[868112011, bi recommand http request error]
+2019-03-18 11:56:41 542|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783|send warning errCode[868112011] errMsg[<ERROR>
+query bi cardTemp error:bi recommand http request error
+</ERROR>]
+2019-03-18 11:56:41 542|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:641|enter FUNC:[qryCityList] LINE:[641] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:41 542|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783|exec sql[ SELECT Fprovince,Fcity FROM ucc_db.t_bank_position where Fbank_type like '%4951%' or Fbank_type like '%4954%';]
+2019-03-18 11:56:41 550|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783|SQL Query:7766 us
+2019-03-18 11:56:41 551|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:469|enter FUNC:[queryFidPolarRecommend] LINE:[469] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:41 551|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:591|enter FUNC:[GetLocalIP] LINE:[591] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:41 551|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:496|strSign=[e1547057e58c0ae342e8c4a959d0406385cef3d22019031810.125.48.146] post param=[timestamp=20190318&adPos=100100001&bankid=4951,4954&fappId=10010
+&fuin=085e9858e9867e22d5ec247a5@wx.tenpay.com&sign=c0a787b30d926b40150e558634cb8e6a&channelId=0001]2019-03-18 11:56:41 551|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783|updateHostInfo from L5, host:10.209.2.234, port:8080
+2019-03-18 11:56:41 551|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783|http req:GET /recommend/api/recommend.do?timestamp=20190318&adPos=100100001&bankid=4951,4954&fappId=10010&fuin=085e9858e9867e22d5ec247a5@wx.tenpay.com&sign=c0a787b30d926b40150e55863
+4cb8e6a&channelId=0001 HTTP/1.0Host:10.209.2.234
+Accept:*/*
+Referer:
+
+
+2019-03-18 11:56:41 556|ERROR|ucc_query_right_index_c|21899|51092307d0a13731257972213783|create socket err:Connection refused [socket.cpp: 330]
+2019-03-18 11:56:41 556|ERROR|ucc_query_right_index_c|21899|51092307d0a13731257972213783|BgHttpCall Fail, timecost:5051
+2019-03-18 11:56:41 556|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783|reportResult, retcode:-1, timecost:5051
+2019-03-18 11:56:41 556|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783|reset the connection...
+2019-03-18 11:56:41 556|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783|reset the connection...
+2019-03-18 11:56:41 556|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:451|enter FUNC:[queryDataFromDb] LINE:[451] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:41 556|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:537|enter FUNC:[genQryCondition] LINE:[537] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:41 556|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783|exec sql[ SELECT Fpackage_id, Fbank_type, Fname, Ftitle1, Fdesc,  Fimg, Fclass_id, Fattain_regular, Fcreate_time, Fmodify_time,Fcnt,Fshow_label,Flabel_show_time FROM ucc_db.t_right
+_package   where  Fstate=3  and Fpackage_id in ('100001','100004','100005','100006','100007','100009','100012','100013','100014','100016','100017','100018','100021','100028','100029','100038','100039','100040','100045')  and  (  Fbank_type like '%4951%'  or  Fbank_type like '%4954%'  )  and (Fpackage_id in (select Fpackage_id from ucc_db.t_right_service where Fstate=3  and  (  Fbank_type = '4951'  or  Fbank_type = '4954'  )  ) or Fpackage_type=2)   order by Fmodify_time ASC; ]2019-03-18 11:56:41 560|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783|SQL Query:3865 us
+2019-03-18 11:56:41 560|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:453|m_RightPackageMap size = [14]
+2019-03-18 11:56:41 560|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:454|filterRightPackageByChannel, m_RightPackageMap size = [14]
+2019-03-18 11:56:41 560|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783|exec sql[SELECT Fclass_id, Fclass_name, Fclass_url, Fcreate_time, Fmodify_time, Fstandby1, Fstandby2 FROM ucc_db.t_package_class  where Fstate=3  order by Fmodify_time DESC ;]
+2019-03-18 11:56:41 561|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783|SQL Query:506 us
+2019-03-18 11:56:41 561|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:457|m_RightPackageClassList size = [10]
+2019-03-18 11:56:41 561|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783|exec sql[SELECT Fcombo_id, Fcombo_name, Fcombo_url, Fpackage_list, Fcreate_time, Fmodify_time, Fstandby1, Fstandby2 FROM ucc_db.t_package_combo order by Fmodify_time DESC ;]
+2019-03-18 11:56:41 561|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783|SQL Query:456 us
+2019-03-18 11:56:41 561|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:460|m_RightPackageComboList size = [0]
+2019-03-18 11:56:41 561|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783|exec sql[SELECT Fpackage_id, Fservice_id, Fbank_type, Fname, Fcnt, Fuse_desc, Fimg, Fscope, Fdetail, Fshow_type, Fclass_id, Fusing_url, Fusing_state, Fexplanation_url, Fcreate_time
+, Fmodify_time, Fstate, Fversion FROM ucc_db.t_right_service order by Fmodify_time]2019-03-18 11:56:41 562|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783|SQL Query:772 us
+2019-03-18 11:56:41 564|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:463|service size = [56]
+2019-03-18 11:56:41 564|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:816|enter FUNC:[refreshRightPakcageShowLabel] LINE:[816] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:41 564|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:82|enter FUNC:[packReturnMsg] LINE:[82] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:41 564|ERROR|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:110|BI.response error, no items node
+2019-03-18 11:56:41 564|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:113|query recommend items failed, load package from config file
+2019-03-18 11:56:41 565|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:164|enter FUNC:[getCardTempInfo] LINE:[164] FILE:[../comm/preprocess_data.cpp]
+2019-03-18 11:56:41 565|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:871|enter FUNC:[sortCardTempListByBIRet] LINE:[871] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:41 565|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:884|BI recomment cardTemp is empty
+2019-03-18 11:56:41 565|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:871|enter FUNC:[sortCardTempListByBIRet] LINE:[871] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:41 565|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:884|BI recomment cardTemp is empty
+2019-03-18 11:56:41 565|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:171|enter FUNC:[getChannelDefine] LINE:[171] FILE:[../comm/preprocess_data.cpp]
+2019-03-18 11:56:41 565|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||preprocess_data.cpp:171|enter FUNC:[getChannelDefine] LINE:[171] FILE:[../comm/preprocess_data.cpp]
+2019-03-18 11:56:41 566|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_query_right_index_c.cpp:59|enter FUNC:[~UccQueryRightIndex] LINE:[59] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:41 566|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783|reset the connection...
+2019-03-18 11:56:41 566|DEBUG|ucc_query_right_index_c|21899|51092307d0a13731257972213783||ucc_select_bank_c.cpp:47|enter FUNC:[~UccSelectBank] LINE:[47] FILE:[../service/ucc_select_bank_c.cpp]
+2019-03-18 11:56:41 566|NORMAL|ucc_query_right_index_c|21899|51092307d0a13731257972213783||runinfo.cpp:159||out|180|result=0&res_info=ok&repay_gray_4951=0&repay_gray_4952=0&repay_gray_4953=0&repay_gray_4954=0&bankTypes=["4951","4954"]%0a&cardState=0&cityList={"上海":["
+上海"],"云南":["大理","昆明","曲靖","玉溪","红河"],"内蒙古":["呼和浩特","包头","鄂尔多斯","赤峰"],"北京":["北京"],"吉林":["长春","吉林"],"四川":["眉山","成都","德阳","南充","宜宾","达州"],"天津":["天津"],"宁夏":["银川"],"安徽":["合肥","芜湖","安庆","滁州","六安"],"山东":["济南","济宁","淄博","滨州","威海","东营","青岛","日照","莱芜","潍坊","聊城","枣庄","临沂","烟台"],"山西":["太原","临汾","长治","大同","柳林县","吕梁"],"广东":["广州","深圳","珠海","佛山","东莞","中山","江门","潮州","河源","惠州","揭阳","茂名","梅州","清远","汕头","韶关","阳江","湛江","云浮","肇庆"],"广西":["南宁","柳州","钦州","桂林"],"新疆":["昌吉","乌鲁木齐","喀什"],"江苏":["南京","常州","南通","无锡","镇江","泰州","盐城","淮安","扬州","苏州","徐州"],"江西":["南昌","赣州","九江","萍乡"],"河北":["石家庄","唐山","廊坊","沧州","保定","承德","黄骅","涿州"],"河南":["郑州","安阳","焦作","洛阳","平顶山","三门峡","新乡","南阳","商丘","汝州","信阳"],"浙江":["杭州","嘉兴","金华","宁波","台州","温州","义乌","绍兴","慈溪","奉化","瑞安","湖州","衢州","富阳","丽水"],"海南":["海口","三亚"],"湖北":["武汉","黄石","宜昌","襄阳","十堰","鄂州"],"湖南":["长沙","岳阳","常德","衡阳","湘潭","株洲","邵阳"],"甘肃":["兰州"],"福建":["福州","泉州","厦门","莆田","龙岩","漳州","宁德","三明"],"贵州":["贵阳","遵义"],"辽宁":["沈阳","鞍山","本溪","大连","葫芦岛","盘锦","营口","丹东","辽阳","抚顺"],"重庆":["重庆"],"陕西":["西安","咸阳","榆林","宝鸡","渭南"],"青海":["西宁","海东"],"黑龙江":["哈尔滨","大庆","牡丹江","齐齐哈尔"]}%0a&bi={}&biCardTmp={}&card_images={"4951":[{"cardLevel":"金卡","cardOrg":"银联","imageId":"D0001","imageUrl":"card_tuanyuan","inner_imageId":"weplus_tuanyuan_4951","name":"","shortDesc":"微加银联团员卡","special_imageId":""},{"cardLevel":"金卡","cardOrg":"银联","imageId":"D0004","imageUrl":"card_xy","inner_imageId":"weplus_xy_4951","name":"","shortDesc":"微加银联蓝色梦想卡","special_imageId":""},{"cardLevel":"金卡","cardOrg":"银联","imageId":"D0003","imageUrl":"card_xy_pink","inner_imageId":"weplus_xy_pink_4951","name":"","shortDesc":"微加银联粉色青春卡","special_imageId":""}],"4954":[{"cardLevel":"金卡","cardOrg":"银联","imageId":"CS0521","imageUrl":"card","inner_imageId":"weplus_CUPstandard_4954","name":"","shortDesc":"微加银联标准卡黑卡","special_imageId":""}]}%0a&recommend=[{"Fclass_id":"BI","Fclass_name":"个性尊享","Fclass_url":"BI_URL","right_packages":[{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"滴滴快车10元现金券4张","Fimg":"icon-didi","Fname":"出行有礼","Fpackage_id":"100001","Ftitle1":"滴滴快车10元现金券","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"腾讯视频VIP会员月卡3张","Fimg":"icon-qqvideo","Fname":"视听享受","Fpackage_id":"100004","Ftitle1":"腾讯视频VIP会员月卡","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满299元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"全国电影通用兑换券2张","Fimg":"icon-film","Fname":"影视大片","Fpackage_id":"100007","Ftitle1":"全国电影兑换券","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"电商消费奖励5倍积分","Fimg":"icon-ecommerce","Fname":"网购积分","Fpackage_id":"100016","Ftitle1":"电商消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"超市/便利店消费奖励5倍积分","Fimg":"icon-supermarket","Fname":"超市积分","Fpackage_id":"100017","Ftitle1":"超市消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"丝芙兰/屈臣氏等消费奖励5倍积分","Fimg":"icon-cosmetic","Fname":"美妆积分","Fpackage_id":"100018","Ftitle1":"美妆消费奖励5倍积分","packageLabel":"","required":0}]}]%0a&right_package=[{"Fclass_id":"10002","Fclass_name":"娱乐","Fclass_url":"","right_packages":[{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"腾讯视频VIP会员月卡3张","Fimg":"icon-qqvideo","Fname":"视听享受","Fpackage_id":"100004","Ftitle1":"腾讯视频VIP会员月卡","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"优酷视频VIP会员月卡3张","Fimg":"icon-youku","Fname":"视听享受","Fpackage_id":"100005","Ftitle1":"优酷视频VIP会员月卡","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"爱奇艺视频VIP会员月卡3张","Fimg":"icon-iqiyi","Fname":"视听享受","Fpackage_id":"100006","Ftitle1":"爱奇艺视频VIP会员月卡","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满299元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"全国电影通用兑换券2张","Fimg":"icon-film","Fname":"影视大片","Fpackage_id":"100007","Ftitle1":"全国电影兑换券","packageLabel":"","required":0}]},{"Fclass_id":"10003","Fclass_name":"美食","Fclass_url":"","right_packages":[{"Fattain_regular":"线下刷卡单笔满699元领取","Fbank_type":"4951","Fdesc":"小熊0.6L滴漏咖啡机1台","Fimg":"icon-coffeegift","Fname":"咖啡制造","Fpackage_id":"100029","Ftitle1":"小熊0.6L滴漏咖啡机","packageLabel":"","required":0}]},{"Fclass_id":"10004","Fclass_name":"车主","Fclass_url":"","right_packages":[{"Fattain_regular":"线下刷卡单笔满199元领取1次","Fbank_type":"4951","Fdesc":"车点点25元5座洗车券1张","Fimg":"icon-carcleaning","Fname":"洗车有礼","Fpackage_id":"100021","Ftitle1":"车点点25元5座洗车券","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4951","Fdesc":"加油消费奖励2倍积分","Fimg":"icon-gas","Fname":"加油积分","Fpackage_id":"100039","Ftitle1":"加油消费积分翻倍","packageLabel":"","required":0}]},{"Fclass_id":"10006","Fclass_name":"购物","Fclass_url":"","right_packages":[{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"电商消费奖励5倍积分","Fimg":"icon-ecommerce","Fname":"网购积分","Fpackage_id":"100016","Ftitle1":"电商消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"超市/便利店消费奖励5倍积分","Fimg":"icon-supermarket","Fname":"超市积分","Fpackage_id":"100017","Ftitle1":"超市消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"丝芙兰/屈臣氏等消费奖励5倍积分","Fimg":"icon-cosmetic","Fname":"美妆积分","Fpackage_id":"100018","Ftitle1":"美妆消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4951","Fdesc":"微信支付奖励2倍积分","Fimg":"icon-wechatpoints","Fname":"微信积分","Fpackage_id":"100038","Ftitle1":"微信支付积分翻倍","packageLabel":"","required":0}]},{"Fclass_id":"10008","Fclass_name":"安全","Fclass_url":"","right_packages":[{"Fattain_regular":"","Fbank_type":"4951","Fdesc":"交易安全卫士3个月","Fimg":"icon-protection","Fname":"交易安全","Fpackage_id":"100040","Ftitle1":"交易安全卫士","packageLabel":"","required":0}]},{"Fclass_id":"10001","Fclass_name":"出行","Fclass_url":"","right_packages":[{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"滴滴快车10元现金券4张","Fimg":"icon-didi","Fname":"出行有礼","Fpackage_id":"100001","Ftitle1":"滴滴快车10元现金券","packageLabel":"","required":0},{"Fattain_regular":"线下刷卡单笔满699元领取package","Fbank_type":"4951","Fdesc":"龙腾机场贵宾厅服务1人次","Fimg":"icon-dragonpass","Fname":"机场贵宾package","Fpackage_id":"100028","Ftitle1":"龙腾机场贵宾厅服务pacgage","packageLabel":"","required":0}]}]%0a&channelAdImage=
+2019-03-18 11:56:43 823|NORMAL|ucc_query_subscribe_c|21899|51092307d0a13755419872213983||runinfo.cpp:130||in|CgiName=ucc_mp_query_subscribe.fcgi&MSG_NO=51092307d0a13755419872213983&head_u=085e9858e9867e22d5ec247a5&request_text=W6PodVRc6eDxJuopvnDNwrPUI_SNWkVo0Mw36w_4F0A
+-AmkIWoRPT2NK3HXyR1iAgJSARuYq6lFLHTZ37tJRU_7PusxGzr7YEacDo-EMkm1P0Rs178YM-Q%3D%3D&request_type=106572&sp_id=2000000000&ver=12019-03-18 11:56:43 824|DEBUG|ucc_query_subscribe_c|21899|51092307d0a13755419872213983||ucc_itg_service.cpp:343|decode input: from=user&openid=oc-i20e24RWiBtsrGM9Nya4a6aNE&abstract=VAZ4OBC8OMx91ciGILcp2B-yQ4A%3D
+2019-03-18 11:56:43 824|DEBUG|ucc_query_subscribe_c|21899|51092307d0a13755419872213983||ucc_query_subscribe.cpp:31|enter FUNC:[excute] LINE:[31] FILE:[../service/ucc_query_subscribe.cpp]
+2019-03-18 11:56:43 824|NORMAL|ucc_query_subscribe_c|21899|51092307d0a13755419872213983|exec sql[select Funionid, Fopenid, Faccid, Fstate, Fcreate_time, Fmodify_time from ucc_db.t_subscribe where Fopenid='oc-i20e24RWiBtsrGM9Nya4a6aNE' limit 2]
+2019-03-18 11:56:43 824|NORMAL|ucc_query_subscribe_c|21899|51092307d0a13755419872213983|SQL Query:697 us
+2019-03-18 11:56:43 824|NORMAL|ucc_query_subscribe_c|21899|51092307d0a13755419872213983||runinfo.cpp:159||out|1|result=0&res_info=ok&data={"subscribe":0}
+
+2019-03-18 11:56:57 973|NORMAL|ucc_query_white_list_c|21899|51092307d0a13899135902213770||runinfo.cpp:130||in|CgiName=ucc_mp_right_index.fcgi&MSG_NO=51092307d0a13899135902213770&head_u=085e9858e9867e22d5ec247a5&request_text=pHZ4EAAA-P2jGiD14aHEjn-0Hj4DYhrJCtjh3Gej9j8CE-
+ByuUysHMfG5oBJ9KES5eTltId-4TIRAF2zWN9Qe6c5UqPT2D94siEp-Hph3bxQF8JbVSJRgi5UOOUy-AdR-P6_i-i5_ipqAJi3tg8CJsan7wHrJU76bqV46cuQzz15s7QIIUlKv10WAUFNqHA_5Xx1067XTwZ5eWVvt0zvlg%3D%3D&request_type=105617&sp_id=2000000000&ver=12019-03-18 11:56:57 973|DEBUG|ucc_query_white_list_c|21899|51092307d0a13899135902213770||ucc_itg_service.cpp:343|decode input: accid=085e9858e9867e22d5ec247a5&city=北京&major_channel=&minor_channel=0001&unionid=o1oBiwlnFuRdQ-TlEpXeeIlLhhzY&abstract=UhyJZplLoHVWA2a9P_Ecn
+u_veKs%3D2019-03-18 11:56:57 973|NORMAL|ucc_query_white_list_c|21899|51092307d0a13899135902213770|exec sql[SELECT Fchannel_id, Fchannel_name, Fbank_type, Fcard_temp_list, Fpackage_list, Flock_package_list,Fis_check_white,Fis_channnelid_to_bank, Fstandby4 FROM ucc_db.t_channel_at
+tri where Fstate=3 and Fchannel_id='0001' and Fstandby4!='' limit 1]2019-03-18 11:56:57 974|NORMAL|ucc_query_white_list_c|21899|51092307d0a13899135902213770|SQL Query:1048 us
+2019-03-18 11:56:57 974|DEBUG|ucc_query_white_list_c|21899|51092307d0a13899135902213770||ucc_query_white_list_c.cpp:59|major channel: 0001, minor channel: 0001
+2019-03-18 11:56:57 974|NORMAL|ucc_query_white_list_c|21899|51092307d0a13899135902213770|exec sql[SELECT Faccid, Fstate, Ftype, Fcreate_time, Fmodify_time, Funionid, Fsupport_banks FROM ucc_db.t_spec_user_2 WHERE Faccid='085e9858e9867e22d5ec247a5' and Fstate=1 limit 2]
+2019-03-18 11:56:57 974|NORMAL|ucc_query_white_list_c|21899|51092307d0a13899135902213770|SQL Query:486 us
+2019-03-18 11:56:57 975|DEBUG|ucc_query_white_list_c|21899|51092307d0a13899135902213770|reset the connection...
+2019-03-18 11:56:57 975|NORMAL|ucc_query_white_list_c|21899|51092307d0a13899135902213770||runinfo.cpp:159||out|2|result=0&res_info=ok&passed=1
+
+2019-03-18 11:56:57 977|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770||runinfo.cpp:130||in|CgiName=ucc_mp_right_index.fcgi&MSG_NO=51092307d0a13899135902213770&head_u=085e9858e9867e22d5ec247a5&request_text=pHZ4EAAA-P2jGiD14aHEjn-0Hj4DYhrJCtjh3Gej9j95B
+Bon-grOuwkRjM0_7HI4mnf6vCICGxw-oetJ96pn8kY6oYWK8VZFpcpMQVd1QnWkSSuvNSbkwVKwIKlIJJLFbKZSC7xhc7VJ008pYj2pahR5W2qFA7PTaAM_w5kP745eAfLozKqpFhMmRjrhGynR&request_type=107652&sp_id=2000000000&ver=12019-03-18 11:56:57 977|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:51|enter FUNC:[UccQueryRightIndex] LINE:[51] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:57 977|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_itg_service.cpp:343|decode input: accid=085e9858e9867e22d5ec247a5&apply_channel=0001&city=北京&unionid=o1oBiwlnFuRdQ-TlEpXeeIlLhhzY&abstract=37PmB-32Fapu9Na7AKOHCn6zKeM%3D
+2019-03-18 11:56:57 977|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:66|enter FUNC:[parseInputMsg] LINE:[66] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:57 977|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:336|enter FUNC:[excute] LINE:[336] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:57 977|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:673|enter FUNC:[qryBankByCurrCity] LINE:[673] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:57 977|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770|exec sql[ SELECT Fbank_type FROM ucc_db.t_bank_position where LOCATE(Fcity,'北京')>0 ]
+2019-03-18 11:56:57 977|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770|SQL Query:523 us
+2019-03-18 11:56:57 977|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:353|select by city, bank type[4951|4952|4953|4954|4955]
+2019-03-18 11:56:57 977|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_select_bank_c.cpp:52|enter FUNC:[selectBankByChannel] LINE:[52] FILE:[../service/ucc_select_bank_c.cpp]
+2019-03-18 11:56:57 977|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||preprocess_data.cpp:134|enter FUNC:[getChannelAttri] LINE:[134] FILE:[../comm/preprocess_data.cpp]
+2019-03-18 11:56:57 978|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:363|select by channel, bank[4951|4952|4953|4954|4955]
+2019-03-18 11:56:57 978|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770|exec sql[SELECT Fbank_type FROM ucc_db.t_apply_recode_3 WHERE Funionid='o1oBiwlnFuRdQ-TlEpXeeIlLhhzY' and FState!=6 ORDER BY Fcreate_time ASC]
+2019-03-18 11:56:57 978|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770|SQL Query:545 us
+2019-03-18 11:56:57 978|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:375|select by apply, bank[4951|4954]
+2019-03-18 11:56:57 978|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||bi_beehive_client.cpp:56|uin: 085e9858e9867e22d5ec247a5@wx.tenpay.com, md5: 70adeee15cf74ca7b8f5b45abfa16e2a, rule: 000-fff
+2019-03-18 11:56:57 978|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||bi_beehive_client.cpp:78|user 085e9858e9867e22d5ec247a5@wx.tenpay.com enabled to use beehive? 1
+2019-03-18 11:56:57 978|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:381|call bi beehive for user 085e9858e9867e22d5ec247a5@wx.tenpay.com
+2019-03-18 11:56:57 979|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||bi_beehive_client.cpp:98|strSignSrc=[uzM1ffsKJKyGun665MzlUVxH9CFvgVEL2019031810.125.48.146] post=[{"channelId":"0001","fappid":"AsOqvhZk","fuin":"085e9858e9867e22d5ec247a5@wx.tenpa
+y.com","lbscity":"北京","sceneId":"1","sign":"e135e9bc31d406d2374567191dfa346b","timestamp":"20190318"}]
+2019-03-18 11:56:58 149|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770|updateHostInfo use default config, host:10.167.2.28, port:8080, timeout:1
+2019-03-18 11:56:58 149|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770|http req:POST /crisk/wePlusCard/getBankList.do HTTP/1.0
+Host: 10.167.2.28
+Accept: */*
+Content-Length: 188
+Content-Type: application/json
+
+{"channelId":"0001","fappid":"AsOqvhZk","fuin":"085e9858e9867e22d5ec247a5@wx.tenpay.com","lbscity":"北京","sceneId":"1","sign":"e135e9bc31d406d2374567191dfa346b","timestamp":"20190318"}
+
+2019-03-18 11:56:58 149|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770|http://10.167.2.28:8080//crisk/wePlusCard/getBankList.do
+POST /crisk/wePlusCard/getBankList.do HTTP/1.0
+Host: 10.167.2.28
+Accept: */*
+Content-Length: 188
+Content-Type: application/json
+
+{"channelId":"0001","fappid":"AsOqvhZk","fuin":"085e9858e9867e22d5ec247a5@wx.tenpay.com","lbscity":"北京","sceneId":"1","sign":"e135e9bc31d406d2374567191dfa346b","timestamp":"20190318"}
+
+2019-03-18 11:56:58 156|ERROR|ucc_query_right_index_c|21899|51092307d0a13899135902213770|create socket err:Connection refused [socket.cpp: 330]
+2019-03-18 11:56:58 156|ERROR|ucc_query_right_index_c|21899|51092307d0a13899135902213770|timecost:6801, BgHttpCall Fail
+2019-03-18 11:56:58 156|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770|reset the connection...
+2019-03-18 11:56:58 156|ERROR|ucc_query_right_index_c|21899|51092307d0a13899135902213770||bi_beehive_client.cpp:134|exception when calling BI beehive service, e.what=Failed to post data
+2019-03-18 11:56:58 156|ERROR|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:399|failed to get recommended bank types for 085e9858e9867e22d5ec247a5@wx.tenpay.com: 868121331 Failed to post data
+2019-03-18 11:56:58 156|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:407|select by BI, bank[4951|4954]
+2019-03-18 11:56:58 156|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:835|enter FUNC:[getAllCardTemp] LINE:[835] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:58 156|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||preprocess_data.cpp:164|enter FUNC:[getCardTempInfo] LINE:[164] FILE:[../comm/preprocess_data.cpp]
+2019-03-18 11:56:58 156|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:850|channel=微加卡-公众号-卡片申请, cardNum=D0001
+2019-03-18 11:56:58 156|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:850|channel=微加卡-公众号-卡片申请, cardNum=D0004
+2019-03-18 11:56:58 156|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:850|channel=微加卡-公众号-卡片申请, cardNum=D0003
+2019-03-18 11:56:58 156|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:774|enter FUNC:[unionBIRecommCardTemp] LINE:[774] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:58 157|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_itg_tool.cpp:538|strSign=[e1547057e58c0ae342e8c4a959d0406385cef3d2155288141810.125.48.146] post param=[fuin=085e9858e9867e22d5ec247a5@wx.tenpay.com&timestamp=1552881418&sign=34
+a31bbe304261d9e68ed8e753a67c12&fappId=10010&adPos=100100006&validItems=D0001,D0004,D0003]2019-03-18 11:56:58 157|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770|updateHostInfo from L5, host:10.209.2.209, port:8080
+2019-03-18 11:56:58 157|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770|http req:GET /recommend/api/recommend.do?fuin=085e9858e9867e22d5ec247a5@wx.tenpay.com&timestamp=1552881418&sign=34a31bbe304261d9e68ed8e753a67c12&fappId=10010&adPos=100100006&validIt
+ems=D0001,D0004,D0003 HTTP/1.0Host:10.209.2.209
+Accept:*/*
+Referer:
+
+
+2019-03-18 11:56:58 162|ERROR|ucc_query_right_index_c|21899|51092307d0a13899135902213770|create socket err:Connection refused [socket.cpp: 330]
+2019-03-18 11:56:58 162|ERROR|ucc_query_right_index_c|21899|51092307d0a13899135902213770|BgHttpCall Fail, timecost:4992
+2019-03-18 11:56:58 162|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770|reportResult, retcode:-1, timecost:4992
+2019-03-18 11:56:58 162|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770|reset the connection...
+2019-03-18 11:56:58 162|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770|reset the connection...
+2019-03-18 11:56:58 162|ERROR|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:803|callBiRecommend error[868112011, bi recommand http request error]
+2019-03-18 11:56:58 162|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770|send warning errCode[868112011] errMsg[<ERROR>
+query bi cardTemp error:bi recommand http request error
+</ERROR>]
+2019-03-18 11:56:58 162|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:641|enter FUNC:[qryCityList] LINE:[641] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:58 162|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770|exec sql[ SELECT Fprovince,Fcity FROM ucc_db.t_bank_position where Fbank_type like '%4951%' or Fbank_type like '%4954%';]
+2019-03-18 11:56:58 163|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770|SQL Query:707 us
+2019-03-18 11:56:58 163|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:469|enter FUNC:[queryFidPolarRecommend] LINE:[469] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:58 163|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:591|enter FUNC:[GetLocalIP] LINE:[591] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:58 163|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:496|strSign=[e1547057e58c0ae342e8c4a959d0406385cef3d22019031810.125.48.146] post param=[timestamp=20190318&adPos=100100001&bankid=4951,4954&fappId=10010
+&fuin=085e9858e9867e22d5ec247a5@wx.tenpay.com&sign=c0a787b30d926b40150e558634cb8e6a&channelId=0001]2019-03-18 11:56:58 163|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770|updateHostInfo from L5, host:10.209.2.209, port:8080
+2019-03-18 11:56:58 163|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770|http req:GET /recommend/api/recommend.do?timestamp=20190318&adPos=100100001&bankid=4951,4954&fappId=10010&fuin=085e9858e9867e22d5ec247a5@wx.tenpay.com&sign=c0a787b30d926b40150e55863
+4cb8e6a&channelId=0001 HTTP/1.0Host:10.209.2.209
+Accept:*/*
+Referer:
+
+
+2019-03-18 11:56:58 166|ERROR|ucc_query_right_index_c|21899|51092307d0a13899135902213770|create socket err:Connection refused [socket.cpp: 330]
+2019-03-18 11:56:58 166|ERROR|ucc_query_right_index_c|21899|51092307d0a13899135902213770|BgHttpCall Fail, timecost:3092
+2019-03-18 11:56:58 166|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770|reportResult, retcode:-1, timecost:3092
+2019-03-18 11:56:58 166|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770|reset the connection...
+2019-03-18 11:56:58 166|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770|reset the connection...
+2019-03-18 11:56:58 166|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:451|enter FUNC:[queryDataFromDb] LINE:[451] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:58 166|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:537|enter FUNC:[genQryCondition] LINE:[537] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:58 166|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770|exec sql[ SELECT Fpackage_id, Fbank_type, Fname, Ftitle1, Fdesc,  Fimg, Fclass_id, Fattain_regular, Fcreate_time, Fmodify_time,Fcnt,Fshow_label,Flabel_show_time FROM ucc_db.t_right
+_package   where  Fstate=3  and Fpackage_id in ('100001','100004','100005','100006','100007','100009','100012','100013','100014','100016','100017','100018','100021','100028','100029','100038','100039','100040','100045')  and  (  Fbank_type like '%4951%'  or  Fbank_type like '%4954%'  )  and (Fpackage_id in (select Fpackage_id from ucc_db.t_right_service where Fstate=3  and  (  Fbank_type = '4951'  or  Fbank_type = '4954'  )  ) or Fpackage_type=2)   order by Fmodify_time ASC; ]2019-03-18 11:56:58 168|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770|SQL Query:1124 us
+2019-03-18 11:56:58 168|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:453|m_RightPackageMap size = [14]
+2019-03-18 11:56:58 168|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:454|filterRightPackageByChannel, m_RightPackageMap size = [14]
+2019-03-18 11:56:58 170|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770|exec sql[SELECT Fclass_id, Fclass_name, Fclass_url, Fcreate_time, Fmodify_time, Fstandby1, Fstandby2 FROM ucc_db.t_package_class  where Fstate=3  order by Fmodify_time DESC ;]
+2019-03-18 11:56:58 171|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770|SQL Query:523 us
+2019-03-18 11:56:58 171|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:457|m_RightPackageClassList size = [10]
+2019-03-18 11:56:58 171|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770|exec sql[SELECT Fcombo_id, Fcombo_name, Fcombo_url, Fpackage_list, Fcreate_time, Fmodify_time, Fstandby1, Fstandby2 FROM ucc_db.t_package_combo order by Fmodify_time DESC ;]
+2019-03-18 11:56:58 171|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770|SQL Query:428 us
+2019-03-18 11:56:58 171|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:460|m_RightPackageComboList size = [0]
+2019-03-18 11:56:58 171|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770|exec sql[SELECT Fpackage_id, Fservice_id, Fbank_type, Fname, Fcnt, Fuse_desc, Fimg, Fscope, Fdetail, Fshow_type, Fclass_id, Fusing_url, Fusing_state, Fexplanation_url, Fcreate_time
+, Fmodify_time, Fstate, Fversion FROM ucc_db.t_right_service order by Fmodify_time]2019-03-18 11:56:58 172|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770|SQL Query:759 us
+2019-03-18 11:56:58 174|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:463|service size = [56]
+2019-03-18 11:56:58 174|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:816|enter FUNC:[refreshRightPakcageShowLabel] LINE:[816] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:58 174|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:82|enter FUNC:[packReturnMsg] LINE:[82] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:58 174|ERROR|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:110|BI.response error, no items node
+2019-03-18 11:56:58 174|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:113|query recommend items failed, load package from config file
+2019-03-18 11:56:58 174|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||preprocess_data.cpp:164|enter FUNC:[getCardTempInfo] LINE:[164] FILE:[../comm/preprocess_data.cpp]
+2019-03-18 11:56:58 174|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:871|enter FUNC:[sortCardTempListByBIRet] LINE:[871] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:58 174|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:884|BI recomment cardTemp is empty
+2019-03-18 11:56:58 174|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:871|enter FUNC:[sortCardTempListByBIRet] LINE:[871] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:58 174|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:884|BI recomment cardTemp is empty
+2019-03-18 11:56:58 174|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||preprocess_data.cpp:171|enter FUNC:[getChannelDefine] LINE:[171] FILE:[../comm/preprocess_data.cpp]
+2019-03-18 11:56:58 174|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||preprocess_data.cpp:171|enter FUNC:[getChannelDefine] LINE:[171] FILE:[../comm/preprocess_data.cpp]
+2019-03-18 11:56:58 175|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_query_right_index_c.cpp:59|enter FUNC:[~UccQueryRightIndex] LINE:[59] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:58 175|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770|reset the connection...
+2019-03-18 11:56:58 175|DEBUG|ucc_query_right_index_c|21899|51092307d0a13899135902213770||ucc_select_bank_c.cpp:47|enter FUNC:[~UccSelectBank] LINE:[47] FILE:[../service/ucc_select_bank_c.cpp]
+2019-03-18 11:56:58 175|NORMAL|ucc_query_right_index_c|21899|51092307d0a13899135902213770||runinfo.cpp:159||out|199|result=0&res_info=ok&repay_gray_4951=0&repay_gray_4952=0&repay_gray_4953=0&repay_gray_4954=0&bankTypes=["4951","4954"]%0a&cardState=0&cityList={"上海":["
+上海"],"云南":["大理","昆明","曲靖","玉溪","红河"],"内蒙古":["呼和浩特","包头","鄂尔多斯","赤峰"],"北京":["北京"],"吉林":["长春","吉林"],"四川":["眉山","成都","德阳","南充","宜宾","达州"],"天津":["天津"],"宁夏":["银川"],"安徽":["合肥","芜湖","安庆","滁州","六安"],"山东":["济南","济宁","淄博","滨州","威海","东营","青岛","日照","莱芜","潍坊","聊城","枣庄","临沂","烟台"],"山西":["太原","临汾","长治","大同","柳林县","吕梁"],"广东":["广州","深圳","珠海","佛山","东莞","中山","江门","潮州","河源","惠州","揭阳","茂名","梅州","清远","汕头","韶关","阳江","湛江","云浮","肇庆"],"广西":["南宁","柳州","钦州","桂林"],"新疆":["昌吉","乌鲁木齐","喀什"],"江苏":["南京","常州","南通","无锡","镇江","泰州","盐城","淮安","扬州","苏州","徐州"],"江西":["南昌","赣州","九江","萍乡"],"河北":["石家庄","唐山","廊坊","沧州","保定","承德","黄骅","涿州"],"河南":["郑州","安阳","焦作","洛阳","平顶山","三门峡","新乡","南阳","商丘","汝州","信阳"],"浙江":["杭州","嘉兴","金华","宁波","台州","温州","义乌","绍兴","慈溪","奉化","瑞安","湖州","衢州","富阳","丽水"],"海南":["海口","三亚"],"湖北":["武汉","黄石","宜昌","襄阳","十堰","鄂州"],"湖南":["长沙","岳阳","常德","衡阳","湘潭","株洲","邵阳"],"甘肃":["兰州"],"福建":["福州","泉州","厦门","莆田","龙岩","漳州","宁德","三明"],"贵州":["贵阳","遵义"],"辽宁":["沈阳","鞍山","本溪","大连","葫芦岛","盘锦","营口","丹东","辽阳","抚顺"],"重庆":["重庆"],"陕西":["西安","咸阳","榆林","宝鸡","渭南"],"青海":["西宁","海东"],"黑龙江":["哈尔滨","大庆","牡丹江","齐齐哈尔"]}%0a&bi={}&biCardTmp={}&card_images={"4951":[{"cardLevel":"金卡","cardOrg":"银联","imageId":"D0001","imageUrl":"card_tuanyuan","inner_imageId":"weplus_tuanyuan_4951","name":"","shortDesc":"微加银联团员卡","special_imageId":""},{"cardLevel":"金卡","cardOrg":"银联","imageId":"D0004","imageUrl":"card_xy","inner_imageId":"weplus_xy_4951","name":"","shortDesc":"微加银联蓝色梦想卡","special_imageId":""},{"cardLevel":"金卡","cardOrg":"银联","imageId":"D0003","imageUrl":"card_xy_pink","inner_imageId":"weplus_xy_pink_4951","name":"","shortDesc":"微加银联粉色青春卡","special_imageId":""}],"4954":[{"cardLevel":"金卡","cardOrg":"银联","imageId":"CS0521","imageUrl":"card","inner_imageId":"weplus_CUPstandard_4954","name":"","shortDesc":"微加银联标准卡黑卡","special_imageId":""}]}%0a&recommend=[{"Fclass_id":"BI","Fclass_name":"个性尊享","Fclass_url":"BI_URL","right_packages":[{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"滴滴快车10元现金券4张","Fimg":"icon-didi","Fname":"出行有礼","Fpackage_id":"100001","Ftitle1":"滴滴快车10元现金券","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"腾讯视频VIP会员月卡3张","Fimg":"icon-qqvideo","Fname":"视听享受","Fpackage_id":"100004","Ftitle1":"腾讯视频VIP会员月卡","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满299元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"全国电影通用兑换券2张","Fimg":"icon-film","Fname":"影视大片","Fpackage_id":"100007","Ftitle1":"全国电影兑换券","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"电商消费奖励5倍积分","Fimg":"icon-ecommerce","Fname":"网购积分","Fpackage_id":"100016","Ftitle1":"电商消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"超市/便利店消费奖励5倍积分","Fimg":"icon-supermarket","Fname":"超市积分","Fpackage_id":"100017","Ftitle1":"超市消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"丝芙兰/屈臣氏等消费奖励5倍积分","Fimg":"icon-cosmetic","Fname":"美妆积分","Fpackage_id":"100018","Ftitle1":"美妆消费奖励5倍积分","packageLabel":"","required":0}]}]%0a&right_package=[{"Fclass_id":"10002","Fclass_name":"娱乐","Fclass_url":"","right_packages":[{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"腾讯视频VIP会员月卡3张","Fimg":"icon-qqvideo","Fname":"视听享受","Fpackage_id":"100004","Ftitle1":"腾讯视频VIP会员月卡","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"优酷视频VIP会员月卡3张","Fimg":"icon-youku","Fname":"视听享受","Fpackage_id":"100005","Ftitle1":"优酷视频VIP会员月卡","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"爱奇艺视频VIP会员月卡3张","Fimg":"icon-iqiyi","Fname":"视听享受","Fpackage_id":"100006","Ftitle1":"爱奇艺视频VIP会员月卡","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满299元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"全国电影通用兑换券2张","Fimg":"icon-film","Fname":"影视大片","Fpackage_id":"100007","Ftitle1":"全国电影兑换券","packageLabel":"","required":0}]},{"Fclass_id":"10003","Fclass_name":"美食","Fclass_url":"","right_packages":[{"Fattain_regular":"线下刷卡单笔满699元领取","Fbank_type":"4951","Fdesc":"小熊0.6L滴漏咖啡机1台","Fimg":"icon-coffeegift","Fname":"咖啡制造","Fpackage_id":"100029","Ftitle1":"小熊0.6L滴漏咖啡机","packageLabel":"","required":0}]},{"Fclass_id":"10004","Fclass_name":"车主","Fclass_url":"","right_packages":[{"Fattain_regular":"线下刷卡单笔满199元领取1次","Fbank_type":"4951","Fdesc":"车点点25元5座洗车券1张","Fimg":"icon-carcleaning","Fname":"洗车有礼","Fpackage_id":"100021","Ftitle1":"车点点25元5座洗车券","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4951","Fdesc":"加油消费奖励2倍积分","Fimg":"icon-gas","Fname":"加油积分","Fpackage_id":"100039","Ftitle1":"加油消费积分翻倍","packageLabel":"","required":0}]},{"Fclass_id":"10006","Fclass_name":"购物","Fclass_url":"","right_packages":[{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"电商消费奖励5倍积分","Fimg":"icon-ecommerce","Fname":"网购积分","Fpackage_id":"100016","Ftitle1":"电商消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"超市/便利店消费奖励5倍积分","Fimg":"icon-supermarket","Fname":"超市积分","Fpackage_id":"100017","Ftitle1":"超市消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"丝芙兰/屈臣氏等消费奖励5倍积分","Fimg":"icon-cosmetic","Fname":"美妆积分","Fpackage_id":"100018","Ftitle1":"美妆消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4951","Fdesc":"微信支付奖励2倍积分","Fimg":"icon-wechatpoints","Fname":"微信积分","Fpackage_id":"100038","Ftitle1":"微信支付积分翻倍","packageLabel":"","required":0}]},{"Fclass_id":"10008","Fclass_name":"安全","Fclass_url":"","right_packages":[{"Fattain_regular":"","Fbank_type":"4951","Fdesc":"交易安全卫士3个月","Fimg":"icon-protection","Fname":"交易安全","Fpackage_id":"100040","Ftitle1":"交易安全卫士","packageLabel":"","required":0}]},{"Fclass_id":"10001","Fclass_name":"出行","Fclass_url":"","right_packages":[{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"滴滴快车10元现金券4张","Fimg":"icon-didi","Fname":"出行有礼","Fpackage_id":"100001","Ftitle1":"滴滴快车10元现金券","packageLabel":"","required":0},{"Fattain_regular":"线下刷卡单笔满699元领取package","Fbank_type":"4951","Fdesc":"龙腾机场贵宾厅服务1人次","Fimg":"icon-dragonpass","Fname":"机场贵宾package","Fpackage_id":"100028","Ftitle1":"龙腾机场贵宾厅服务pacgage","packageLabel":"","required":0}]}]%0a&channelAdImage=
+2019-03-18 11:56:58 526|NORMAL|ucc_query_subscribe_c|21899|51092307d0a13904639642213985||runinfo.cpp:130||in|CgiName=ucc_mp_query_subscribe.fcgi&MSG_NO=51092307d0a13904639642213985&head_u=085e9858e9867e22d5ec247a5&request_text=W6PodVRc6eDxJuopvnDNwrPUI_SNWkVo0Mw36w_4F0A
+-AmkIWoRPT2NK3HXyR1iAgJSARuYq6lFLHTZ37tJRU_7PusxGzr7YEacDo-EMkm1P0Rs178YM-Q%3D%3D&request_type=106572&sp_id=2000000000&ver=12019-03-18 11:56:58 526|DEBUG|ucc_query_subscribe_c|21899|51092307d0a13904639642213985||ucc_itg_service.cpp:343|decode input: from=user&openid=oc-i20e24RWiBtsrGM9Nya4a6aNE&abstract=VAZ4OBC8OMx91ciGILcp2B-yQ4A%3D
+2019-03-18 11:56:58 526|DEBUG|ucc_query_subscribe_c|21899|51092307d0a13904639642213985||ucc_query_subscribe.cpp:31|enter FUNC:[excute] LINE:[31] FILE:[../service/ucc_query_subscribe.cpp]
+2019-03-18 11:56:58 526|NORMAL|ucc_query_subscribe_c|21899|51092307d0a13904639642213985|exec sql[select Funionid, Fopenid, Faccid, Fstate, Fcreate_time, Fmodify_time from ucc_db.t_subscribe where Fopenid='oc-i20e24RWiBtsrGM9Nya4a6aNE' limit 2]
+2019-03-18 11:56:58 527|NORMAL|ucc_query_subscribe_c|21899|51092307d0a13904639642213985|SQL Query:758 us
+2019-03-18 11:56:58 527|NORMAL|ucc_query_subscribe_c|21899|51092307d0a13904639642213985||runinfo.cpp:159||out|1|result=0&res_info=ok&data={"subscribe":0}
+
+2019-03-18 11:56:58 860|NORMAL|ucc_query_white_list_c|21899|51092307d0a13907871152213742||runinfo.cpp:130||in|CgiName=ucc_mp_right_index.fcgi&MSG_NO=51092307d0a13907871152213742&head_u=085e9858e9867e22d5ec247a5&request_text=pHZ4EAAA-P2jGiD14aHEjn-0Hj4DYhrJCtjh3Gej9j8CE-
+ByuUysHJh8udUA9VyKL5Z-sv4ZuJdECqv4iDMhrzYp0Sh2UevSImL52OWCIzNqAZChqcfa7-mq_SW6_sJgSuUG6OzNd6zKuvYM4-nlMV7mVIbgjMVv5e_44EOM5P8hK6jMa3HsLCiijzgIpJJzhWwuvGjJUQ7At3rT3l-2cA%3D%3D&request_type=105617&sp_id=2000000000&ver=12019-03-18 11:56:58 860|DEBUG|ucc_query_white_list_c|21899|51092307d0a13907871152213742||ucc_itg_service.cpp:343|decode input: accid=085e9858e9867e22d5ec247a5&city=北京市&major_channel=&minor_channel=0001&unionid=o1oBiwlnFuRdQ-TlEpXeeIlLhhzY&abstract=21l4DraZAkZxMzHr9mO
+h6GOlkck%3D2019-03-18 11:56:58 860|NORMAL|ucc_query_white_list_c|21899|51092307d0a13907871152213742|exec sql[SELECT Fchannel_id, Fchannel_name, Fbank_type, Fcard_temp_list, Fpackage_list, Flock_package_list,Fis_check_white,Fis_channnelid_to_bank, Fstandby4 FROM ucc_db.t_channel_at
+tri where Fstate=3 and Fchannel_id='0001' and Fstandby4!='' limit 1]2019-03-18 11:56:58 861|NORMAL|ucc_query_white_list_c|21899|51092307d0a13907871152213742|SQL Query:822 us
+2019-03-18 11:56:58 861|DEBUG|ucc_query_white_list_c|21899|51092307d0a13907871152213742||ucc_query_white_list_c.cpp:59|major channel: 0001, minor channel: 0001
+2019-03-18 11:56:58 861|NORMAL|ucc_query_white_list_c|21899|51092307d0a13907871152213742|exec sql[SELECT Faccid, Fstate, Ftype, Fcreate_time, Fmodify_time, Funionid, Fsupport_banks FROM ucc_db.t_spec_user_2 WHERE Faccid='085e9858e9867e22d5ec247a5' and Fstate=1 limit 2]
+2019-03-18 11:56:58 862|NORMAL|ucc_query_white_list_c|21899|51092307d0a13907871152213742|SQL Query:488 us
+2019-03-18 11:56:58 862|DEBUG|ucc_query_white_list_c|21899|51092307d0a13907871152213742|reset the connection...
+2019-03-18 11:56:58 862|NORMAL|ucc_query_white_list_c|21899|51092307d0a13907871152213742||runinfo.cpp:159||out|1|result=0&res_info=ok&passed=1
+
+2019-03-18 11:56:58 863|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742||runinfo.cpp:130||in|CgiName=ucc_mp_right_index.fcgi&MSG_NO=51092307d0a13907871152213742&head_u=085e9858e9867e22d5ec247a5&request_text=pHZ4EAAA-P2jGiD14aHEjn-0Hj4DYhrJCtjh3Gej9j95B
+Bon-grOuwkRjM0_7HI4mnf6vCICGxyiWmJhgUSN6lw41F2HoHGkAno7cqn68Sutx1HuAjQcmSg3EAplsCWau5_BWU0kZ43cIrBgmVBHW3uia1xS4U3Ft1nW3IC6UWgZriWCPthp_MV0fbHnlk4l&request_type=107652&sp_id=2000000000&ver=12019-03-18 11:56:58 863|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:51|enter FUNC:[UccQueryRightIndex] LINE:[51] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:58 863|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_itg_service.cpp:343|decode input: accid=085e9858e9867e22d5ec247a5&apply_channel=0001&city=北京市&unionid=o1oBiwlnFuRdQ-TlEpXeeIlLhhzY&abstract=eQctKcaYS2bMpQD7kBnM3AvKTM8%3D
+2019-03-18 11:56:58 863|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:66|enter FUNC:[parseInputMsg] LINE:[66] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:58 863|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:336|enter FUNC:[excute] LINE:[336] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:58 863|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:673|enter FUNC:[qryBankByCurrCity] LINE:[673] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:58 863|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742|exec sql[ SELECT Fbank_type FROM ucc_db.t_bank_position where LOCATE(Fcity,'北京市')>0 ]
+2019-03-18 11:56:58 864|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742|SQL Query:519 us
+2019-03-18 11:56:58 864|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:353|select by city, bank type[4951|4952|4953|4954|4955]
+2019-03-18 11:56:58 864|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_select_bank_c.cpp:52|enter FUNC:[selectBankByChannel] LINE:[52] FILE:[../service/ucc_select_bank_c.cpp]
+2019-03-18 11:56:58 864|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||preprocess_data.cpp:134|enter FUNC:[getChannelAttri] LINE:[134] FILE:[../comm/preprocess_data.cpp]
+2019-03-18 11:56:58 864|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:363|select by channel, bank[4951|4952|4953|4954|4955]
+2019-03-18 11:56:58 864|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742|exec sql[SELECT Fbank_type FROM ucc_db.t_apply_recode_3 WHERE Funionid='o1oBiwlnFuRdQ-TlEpXeeIlLhhzY' and FState!=6 ORDER BY Fcreate_time ASC]
+2019-03-18 11:56:58 865|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742|SQL Query:518 us
+2019-03-18 11:56:58 865|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:375|select by apply, bank[4951|4954]
+2019-03-18 11:56:58 865|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||bi_beehive_client.cpp:56|uin: 085e9858e9867e22d5ec247a5@wx.tenpay.com, md5: 70adeee15cf74ca7b8f5b45abfa16e2a, rule: 000-fff
+2019-03-18 11:56:58 865|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||bi_beehive_client.cpp:78|user 085e9858e9867e22d5ec247a5@wx.tenpay.com enabled to use beehive? 1
+2019-03-18 11:56:58 865|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:381|call bi beehive for user 085e9858e9867e22d5ec247a5@wx.tenpay.com
+2019-03-18 11:56:58 865|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||bi_beehive_client.cpp:98|strSignSrc=[uzM1ffsKJKyGun665MzlUVxH9CFvgVEL2019031810.125.48.146] post=[{"channelId":"0001","fappid":"AsOqvhZk","fuin":"085e9858e9867e22d5ec247a5@wx.tenpa
+y.com","lbscity":"北京市","sceneId":"1","sign":"e135e9bc31d406d2374567191dfa346b","timestamp":"20190318"}]
+2019-03-18 11:56:58 865|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742|updateHostInfo use default config, host:10.167.2.28, port:8080, timeout:1
+2019-03-18 11:56:58 865|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742|http req:POST /crisk/wePlusCard/getBankList.do HTTP/1.0
+Host: 10.167.2.28
+Accept: */*
+Content-Length: 191
+Content-Type: application/json
+
+{"channelId":"0001","fappid":"AsOqvhZk","fuin":"085e9858e9867e22d5ec247a5@wx.tenpay.com","lbscity":"北京市","sceneId":"1","sign":"e135e9bc31d406d2374567191dfa346b","timestamp":"20190318"}
+
+2019-03-18 11:56:58 865|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742|http://10.167.2.28:8080//crisk/wePlusCard/getBankList.do
+POST /crisk/wePlusCard/getBankList.do HTTP/1.0
+Host: 10.167.2.28
+Accept: */*
+Content-Length: 191
+Content-Type: application/json
+
+{"channelId":"0001","fappid":"AsOqvhZk","fuin":"085e9858e9867e22d5ec247a5@wx.tenpay.com","lbscity":"北京市","sceneId":"1","sign":"e135e9bc31d406d2374567191dfa346b","timestamp":"20190318"}
+
+2019-03-18 11:56:58 872|ERROR|ucc_query_right_index_c|21899|51092307d0a13907871152213742|create socket err:Connection refused [socket.cpp: 330]
+2019-03-18 11:56:58 872|ERROR|ucc_query_right_index_c|21899|51092307d0a13907871152213742|timecost:6640, BgHttpCall Fail
+2019-03-18 11:56:58 872|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742|reset the connection...
+2019-03-18 11:56:58 872|ERROR|ucc_query_right_index_c|21899|51092307d0a13907871152213742||bi_beehive_client.cpp:134|exception when calling BI beehive service, e.what=Failed to post data
+2019-03-18 11:56:58 872|ERROR|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:399|failed to get recommended bank types for 085e9858e9867e22d5ec247a5@wx.tenpay.com: 868121331 Failed to post data
+2019-03-18 11:56:58 872|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:407|select by BI, bank[4951|4954]
+2019-03-18 11:56:58 872|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:835|enter FUNC:[getAllCardTemp] LINE:[835] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:58 872|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||preprocess_data.cpp:164|enter FUNC:[getCardTempInfo] LINE:[164] FILE:[../comm/preprocess_data.cpp]
+2019-03-18 11:56:58 872|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:850|channel=微加卡-公众号-卡片申请, cardNum=D0001
+2019-03-18 11:56:58 872|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:850|channel=微加卡-公众号-卡片申请, cardNum=D0004
+2019-03-18 11:56:58 872|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:850|channel=微加卡-公众号-卡片申请, cardNum=D0003
+2019-03-18 11:56:58 872|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:774|enter FUNC:[unionBIRecommCardTemp] LINE:[774] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:58 872|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_itg_tool.cpp:538|strSign=[e1547057e58c0ae342e8c4a959d0406385cef3d2155288141810.125.48.146] post param=[fuin=085e9858e9867e22d5ec247a5@wx.tenpay.com&timestamp=1552881418&sign=34
+a31bbe304261d9e68ed8e753a67c12&fappId=10010&adPos=100100006&validItems=D0001,D0004,D0003]2019-03-18 11:56:58 872|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742|updateHostInfo from L5, host:10.209.2.234, port:8080
+2019-03-18 11:56:58 872|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742|http req:GET /recommend/api/recommend.do?fuin=085e9858e9867e22d5ec247a5@wx.tenpay.com&timestamp=1552881418&sign=34a31bbe304261d9e68ed8e753a67c12&fappId=10010&adPos=100100006&validIt
+ems=D0001,D0004,D0003 HTTP/1.0Host:10.209.2.234
+Accept:*/*
+Referer:
+
+
+2019-03-18 11:56:58 877|ERROR|ucc_query_right_index_c|21899|51092307d0a13907871152213742|create socket err:Connection refused [socket.cpp: 330]
+2019-03-18 11:56:58 877|ERROR|ucc_query_right_index_c|21899|51092307d0a13907871152213742|BgHttpCall Fail, timecost:4941
+2019-03-18 11:56:58 877|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742|reportResult, retcode:-1, timecost:4941
+2019-03-18 11:56:58 877|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742|reset the connection...
+2019-03-18 11:56:58 877|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742|reset the connection...
+2019-03-18 11:56:58 877|ERROR|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:803|callBiRecommend error[868112011, bi recommand http request error]
+2019-03-18 11:56:58 877|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742|send warning errCode[868112011] errMsg[<ERROR>
+query bi cardTemp error:bi recommand http request error
+</ERROR>]
+2019-03-18 11:56:58 877|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:641|enter FUNC:[qryCityList] LINE:[641] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:58 877|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742|exec sql[ SELECT Fprovince,Fcity FROM ucc_db.t_bank_position where Fbank_type like '%4951%' or Fbank_type like '%4954%';]
+2019-03-18 11:56:58 878|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742|SQL Query:617 us
+2019-03-18 11:56:58 878|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:469|enter FUNC:[queryFidPolarRecommend] LINE:[469] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:58 878|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:591|enter FUNC:[GetLocalIP] LINE:[591] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:58 879|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:496|strSign=[e1547057e58c0ae342e8c4a959d0406385cef3d22019031810.125.48.146] post param=[timestamp=20190318&adPos=100100001&bankid=4951,4954&fappId=10010
+&fuin=085e9858e9867e22d5ec247a5@wx.tenpay.com&sign=c0a787b30d926b40150e558634cb8e6a&channelId=0001]2019-03-18 11:56:58 879|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742|updateHostInfo from L5, host:10.209.2.234, port:8080
+2019-03-18 11:56:58 879|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742|http req:GET /recommend/api/recommend.do?timestamp=20190318&adPos=100100001&bankid=4951,4954&fappId=10010&fuin=085e9858e9867e22d5ec247a5@wx.tenpay.com&sign=c0a787b30d926b40150e55863
+4cb8e6a&channelId=0001 HTTP/1.0Host:10.209.2.234
+Accept:*/*
+Referer:
+
+
+2019-03-18 11:56:58 882|ERROR|ucc_query_right_index_c|21899|51092307d0a13907871152213742|create socket err:Connection refused [socket.cpp: 330]
+2019-03-18 11:56:58 883|ERROR|ucc_query_right_index_c|21899|51092307d0a13907871152213742|BgHttpCall Fail, timecost:3784
+2019-03-18 11:56:58 883|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742|reportResult, retcode:-1, timecost:3784
+2019-03-18 11:56:58 883|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742|reset the connection...
+2019-03-18 11:56:58 883|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742|reset the connection...
+2019-03-18 11:56:58 883|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:451|enter FUNC:[queryDataFromDb] LINE:[451] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:58 883|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:537|enter FUNC:[genQryCondition] LINE:[537] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:58 883|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742|exec sql[ SELECT Fpackage_id, Fbank_type, Fname, Ftitle1, Fdesc,  Fimg, Fclass_id, Fattain_regular, Fcreate_time, Fmodify_time,Fcnt,Fshow_label,Flabel_show_time FROM ucc_db.t_right
+_package   where  Fstate=3  and Fpackage_id in ('100001','100004','100005','100006','100007','100009','100012','100013','100014','100016','100017','100018','100021','100028','100029','100038','100039','100040','100045')  and  (  Fbank_type like '%4951%'  or  Fbank_type like '%4954%'  )  and (Fpackage_id in (select Fpackage_id from ucc_db.t_right_service where Fstate=3  and  (  Fbank_type = '4951'  or  Fbank_type = '4954'  )  ) or Fpackage_type=2)   order by Fmodify_time ASC; ]2019-03-18 11:56:58 884|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742|SQL Query:1152 us
+2019-03-18 11:56:58 884|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:453|m_RightPackageMap size = [14]
+2019-03-18 11:56:58 884|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:454|filterRightPackageByChannel, m_RightPackageMap size = [14]
+2019-03-18 11:56:58 884|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742|exec sql[SELECT Fclass_id, Fclass_name, Fclass_url, Fcreate_time, Fmodify_time, Fstandby1, Fstandby2 FROM ucc_db.t_package_class  where Fstate=3  order by Fmodify_time DESC ;]
+2019-03-18 11:56:58 885|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742|SQL Query:497 us
+2019-03-18 11:56:58 885|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:457|m_RightPackageClassList size = [10]
+2019-03-18 11:56:58 885|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742|exec sql[SELECT Fcombo_id, Fcombo_name, Fcombo_url, Fpackage_list, Fcreate_time, Fmodify_time, Fstandby1, Fstandby2 FROM ucc_db.t_package_combo order by Fmodify_time DESC ;]
+2019-03-18 11:56:58 885|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742|SQL Query:424 us
+2019-03-18 11:56:58 885|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:460|m_RightPackageComboList size = [0]
+2019-03-18 11:56:58 885|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742|exec sql[SELECT Fpackage_id, Fservice_id, Fbank_type, Fname, Fcnt, Fuse_desc, Fimg, Fscope, Fdetail, Fshow_type, Fclass_id, Fusing_url, Fusing_state, Fexplanation_url, Fcreate_time
+, Fmodify_time, Fstate, Fversion FROM ucc_db.t_right_service order by Fmodify_time]2019-03-18 11:56:58 886|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742|SQL Query:767 us
+2019-03-18 11:56:58 888|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:463|service size = [56]
+2019-03-18 11:56:58 888|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:816|enter FUNC:[refreshRightPakcageShowLabel] LINE:[816] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:58 888|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:82|enter FUNC:[packReturnMsg] LINE:[82] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:58 888|ERROR|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:110|BI.response error, no items node
+2019-03-18 11:56:58 888|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:113|query recommend items failed, load package from config file
+2019-03-18 11:56:58 888|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||preprocess_data.cpp:164|enter FUNC:[getCardTempInfo] LINE:[164] FILE:[../comm/preprocess_data.cpp]
+2019-03-18 11:56:58 888|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:871|enter FUNC:[sortCardTempListByBIRet] LINE:[871] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:58 888|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:884|BI recomment cardTemp is empty
+2019-03-18 11:56:58 888|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:871|enter FUNC:[sortCardTempListByBIRet] LINE:[871] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:58 888|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:884|BI recomment cardTemp is empty
+2019-03-18 11:56:58 888|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||preprocess_data.cpp:171|enter FUNC:[getChannelDefine] LINE:[171] FILE:[../comm/preprocess_data.cpp]
+2019-03-18 11:56:58 888|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||preprocess_data.cpp:171|enter FUNC:[getChannelDefine] LINE:[171] FILE:[../comm/preprocess_data.cpp]
+2019-03-18 11:56:58 889|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_query_right_index_c.cpp:59|enter FUNC:[~UccQueryRightIndex] LINE:[59] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:56:58 889|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742|reset the connection...
+2019-03-18 11:56:58 889|DEBUG|ucc_query_right_index_c|21899|51092307d0a13907871152213742||ucc_select_bank_c.cpp:47|enter FUNC:[~UccSelectBank] LINE:[47] FILE:[../service/ucc_select_bank_c.cpp]
+2019-03-18 11:56:58 889|NORMAL|ucc_query_right_index_c|21899|51092307d0a13907871152213742||runinfo.cpp:159||out|25|result=0&res_info=ok&repay_gray_4951=0&repay_gray_4952=0&repay_gray_4953=0&repay_gray_4954=0&bankTypes=["4951","4954"]%0a&cardState=0&cityList={"上海":["上
+海"],"云南":["大理","昆明","曲靖","玉溪","红河"],"内蒙古":["呼和浩特","包头","鄂尔多斯","赤峰"],"北京":["北京"],"吉林":["长春","吉林"],"四川":["眉山","成都","德阳","南充","宜宾","达州"],"天津":["天津"],"宁夏":["银川"],"安徽":["合肥","芜湖","安庆","滁州","六安"],"山东":["济南","济宁","淄博","滨州","威海","东营","青岛","日照","莱芜","潍坊","聊城","枣庄","临沂","烟台"],"山西":["太原","临汾","长治","大同","柳林县","吕梁"],"广东":["广州","深圳","珠海","佛山","东莞","中山","江门","潮州","河源","惠州","揭阳","茂名","梅州","清远","汕头","韶关","阳江","湛江","云浮","肇庆"],"广西":["南宁","柳州","钦州","桂林"],"新疆":["昌吉","乌鲁木齐","喀什"],"江苏":["南京","常州","南通","无锡","镇江","泰州","盐城","淮安","扬州","苏州","徐州"],"江西":["南昌","赣州","九江","萍乡"],"河北":["石家庄","唐山","廊坊","沧州","保定","承德","黄骅","涿州"],"河南":["郑州","安阳","焦作","洛阳","平顶山","三门峡","新乡","南阳","商丘","汝州","信阳"],"浙江":["杭州","嘉兴","金华","宁波","台州","温州","义乌","绍兴","慈溪","奉化","瑞安","湖州","衢州","富阳","丽水"],"海南":["海口","三亚"],"湖北":["武汉","黄石","宜昌","襄阳","十堰","鄂州"],"湖南":["长沙","岳阳","常德","衡阳","湘潭","株洲","邵阳"],"甘肃":["兰州"],"福建":["福州","泉州","厦门","莆田","龙岩","漳州","宁德","三明"],"贵州":["贵阳","遵义"],"辽宁":["沈阳","鞍山","本溪","大连","葫芦岛","盘锦","营口","丹东","辽阳","抚顺"],"重庆":["重庆"],"陕西":["西安","咸阳","榆林","宝鸡","渭南"],"青海":["西宁","海东"],"黑龙江":["哈尔滨","大庆","牡丹江","齐齐哈尔"]}%0a&bi={}&biCardTmp={}&card_images={"4951":[{"cardLevel":"金卡","cardOrg":"银联","imageId":"D0001","imageUrl":"card_tuanyuan","inner_imageId":"weplus_tuanyuan_4951","name":"","shortDesc":"微加银联团员卡","special_imageId":""},{"cardLevel":"金卡","cardOrg":"银联","imageId":"D0004","imageUrl":"card_xy","inner_imageId":"weplus_xy_4951","name":"","shortDesc":"微加银联蓝色梦想卡","special_imageId":""},{"cardLevel":"金卡","cardOrg":"银联","imageId":"D0003","imageUrl":"card_xy_pink","inner_imageId":"weplus_xy_pink_4951","name":"","shortDesc":"微加银联粉色青春卡","special_imageId":""}],"4954":[{"cardLevel":"金卡","cardOrg":"银联","imageId":"CS0521","imageUrl":"card","inner_imageId":"weplus_CUPstandard_4954","name":"","shortDesc":"微加银联标准卡黑卡","special_imageId":""}]}%0a&recommend=[{"Fclass_id":"BI","Fclass_name":"个性尊享","Fclass_url":"BI_URL","right_packages":[{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"滴滴快车10元现金券4张","Fimg":"icon-didi","Fname":"出行有礼","Fpackage_id":"100001","Ftitle1":"滴滴快车10元现金券","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"腾讯视频VIP会员月卡3张","Fimg":"icon-qqvideo","Fname":"视听享受","Fpackage_id":"100004","Ftitle1":"腾讯视频VIP会员月卡","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满299元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"全国电影通用兑换券2张","Fimg":"icon-film","Fname":"影视大片","Fpackage_id":"100007","Ftitle1":"全国电影兑换券","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"电商消费奖励5倍积分","Fimg":"icon-ecommerce","Fname":"网购积分","Fpackage_id":"100016","Ftitle1":"电商消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"超市/便利店消费奖励5倍积分","Fimg":"icon-supermarket","Fname":"超市积分","Fpackage_id":"100017","Ftitle1":"超市消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"丝芙兰/屈臣氏等消费奖励5倍积分","Fimg":"icon-cosmetic","Fname":"美妆积分","Fpackage_id":"100018","Ftitle1":"美妆消费奖励5倍积分","packageLabel":"","required":0}]}]%0a&right_package=[{"Fclass_id":"10002","Fclass_name":"娱乐","Fclass_url":"","right_packages":[{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"腾讯视频VIP会员月卡3张","Fimg":"icon-qqvideo","Fname":"视听享受","Fpackage_id":"100004","Ftitle1":"腾讯视频VIP会员月卡","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"优酷视频VIP会员月卡3张","Fimg":"icon-youku","Fname":"视听享受","Fpackage_id":"100005","Ftitle1":"优酷视频VIP会员月卡","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"爱奇艺视频VIP会员月卡3张","Fimg":"icon-iqiyi","Fname":"视听享受","Fpackage_id":"100006","Ftitle1":"爱奇艺视频VIP会员月卡","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满299元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"全国电影通用兑换券2张","Fimg":"icon-film","Fname":"影视大片","Fpackage_id":"100007","Ftitle1":"全国电影兑换券","packageLabel":"","required":0}]},{"Fclass_id":"10003","Fclass_name":"美食","Fclass_url":"","right_packages":[{"Fattain_regular":"线下刷卡单笔满699元领取","Fbank_type":"4951","Fdesc":"小熊0.6L滴漏咖啡机1台","Fimg":"icon-coffeegift","Fname":"咖啡制造","Fpackage_id":"100029","Ftitle1":"小熊0.6L滴漏咖啡机","packageLabel":"","required":0}]},{"Fclass_id":"10004","Fclass_name":"车主","Fclass_url":"","right_packages":[{"Fattain_regular":"线下刷卡单笔满199元领取1次","Fbank_type":"4951","Fdesc":"车点点25元5座洗车券1张","Fimg":"icon-carcleaning","Fname":"洗车有礼","Fpackage_id":"100021","Ftitle1":"车点点25元5座洗车券","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4951","Fdesc":"加油消费奖励2倍积分","Fimg":"icon-gas","Fname":"加油积分","Fpackage_id":"100039","Ftitle1":"加油消费积分翻倍","packageLabel":"","required":0}]},{"Fclass_id":"10006","Fclass_name":"购物","Fclass_url":"","right_packages":[{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"电商消费奖励5倍积分","Fimg":"icon-ecommerce","Fname":"网购积分","Fpackage_id":"100016","Ftitle1":"电商消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"超市/便利店消费奖励5倍积分","Fimg":"icon-supermarket","Fname":"超市积分","Fpackage_id":"100017","Ftitle1":"超市消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"丝芙兰/屈臣氏等消费奖励5倍积分","Fimg":"icon-cosmetic","Fname":"美妆积分","Fpackage_id":"100018","Ftitle1":"美妆消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4951","Fdesc":"微信支付奖励2倍积分","Fimg":"icon-wechatpoints","Fname":"微信积分","Fpackage_id":"100038","Ftitle1":"微信支付积分翻倍","packageLabel":"","required":0}]},{"Fclass_id":"10008","Fclass_name":"安全","Fclass_url":"","right_packages":[{"Fattain_regular":"","Fbank_type":"4951","Fdesc":"交易安全卫士3个月","Fimg":"icon-protection","Fname":"交易安全","Fpackage_id":"100040","Ftitle1":"交易安全卫士","packageLabel":"","required":0}]},{"Fclass_id":"10001","Fclass_name":"出行","Fclass_url":"","right_packages":[{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"滴滴快车10元现金券4张","Fimg":"icon-didi","Fname":"出行有礼","Fpackage_id":"100001","Ftitle1":"滴滴快车10元现金券","packageLabel":"","required":0},{"Fattain_regular":"线下刷卡单笔满699元领取package","Fbank_type":"4951","Fdesc":"龙腾机场贵宾厅服务1人次","Fimg":"icon-dragonpass","Fname":"机场贵宾package","Fpackage_id":"100028","Ftitle1":"龙腾机场贵宾厅服务pacgage","packageLabel":"","required":0}]}]%0a&channelAdImage=
+2019-03-18 11:57:00 459|NORMAL|ucc_query_white_list_c|21899|51092307d0a13923985622213782||runinfo.cpp:130||in|CgiName=ucc_mp_right_index.fcgi&MSG_NO=51092307d0a13923985622213782&head_u=085e9858e9867e22d5ec247a5&request_text=pHZ4EAAA-P2jGiD14aHEjn-0Hj4DYhrJCtjh3Gej9j8CE-
+ByuUysHJh8udUA9VyKL5Z-sv4ZuJdECqv4iDMhrzYp0Sh2UevSImL52OWCIzNqAZChqcfa7-mq_SW6_sJgSuUG6OzNd6zKuvYM4-nlMV7mVIbgjMVv5e_44EOM5P8hK6jMa3HsLCiijzgIpJJzhWwuvGjJUQ7At3rT3l-2cA%3D%3D&request_type=105617&sp_id=2000000000&ver=12019-03-18 11:57:00 460|DEBUG|ucc_query_white_list_c|21899|51092307d0a13923985622213782||ucc_itg_service.cpp:343|decode input: accid=085e9858e9867e22d5ec247a5&city=北京市&major_channel=&minor_channel=0001&unionid=o1oBiwlnFuRdQ-TlEpXeeIlLhhzY&abstract=21l4DraZAkZxMzHr9mO
+h6GOlkck%3D2019-03-18 11:57:00 460|NORMAL|ucc_query_white_list_c|21899|51092307d0a13923985622213782|exec sql[SELECT Fchannel_id, Fchannel_name, Fbank_type, Fcard_temp_list, Fpackage_list, Flock_package_list,Fis_check_white,Fis_channnelid_to_bank, Fstandby4 FROM ucc_db.t_channel_at
+tri where Fstate=3 and Fchannel_id='0001' and Fstandby4!='' limit 1]2019-03-18 11:57:00 461|NORMAL|ucc_query_white_list_c|21899|51092307d0a13923985622213782|SQL Query:780 us
+2019-03-18 11:57:00 461|DEBUG|ucc_query_white_list_c|21899|51092307d0a13923985622213782||ucc_query_white_list_c.cpp:59|major channel: 0001, minor channel: 0001
+2019-03-18 11:57:00 461|NORMAL|ucc_query_white_list_c|21899|51092307d0a13923985622213782|exec sql[SELECT Faccid, Fstate, Ftype, Fcreate_time, Fmodify_time, Funionid, Fsupport_banks FROM ucc_db.t_spec_user_2 WHERE Faccid='085e9858e9867e22d5ec247a5' and Fstate=1 limit 2]
+2019-03-18 11:57:00 461|NORMAL|ucc_query_white_list_c|21899|51092307d0a13923985622213782|SQL Query:461 us
+2019-03-18 11:57:00 461|DEBUG|ucc_query_white_list_c|21899|51092307d0a13923985622213782|reset the connection...
+2019-03-18 11:57:00 461|NORMAL|ucc_query_white_list_c|21899|51092307d0a13923985622213782||runinfo.cpp:159||out|1|result=0&res_info=ok&passed=1
+
+2019-03-18 11:57:00 462|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782||runinfo.cpp:130||in|CgiName=ucc_mp_right_index.fcgi&MSG_NO=51092307d0a13923985622213782&head_u=085e9858e9867e22d5ec247a5&request_text=pHZ4EAAA-P2jGiD14aHEjn-0Hj4DYhrJCtjh3Gej9j95B
+Bon-grOuwkRjM0_7HI4mnf6vCICGxyiWmJhgUSN6lw41F2HoHGkAno7cqn68Sutx1HuAjQcmSg3EAplsCWau5_BWU0kZ43cIrBgmVBHW3uia1xS4U3Ft1nW3IC6UWgZriWCPthp_MV0fbHnlk4l&request_type=107652&sp_id=2000000000&ver=12019-03-18 11:57:00 462|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:51|enter FUNC:[UccQueryRightIndex] LINE:[51] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:57:00 463|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_itg_service.cpp:343|decode input: accid=085e9858e9867e22d5ec247a5&apply_channel=0001&city=北京市&unionid=o1oBiwlnFuRdQ-TlEpXeeIlLhhzY&abstract=eQctKcaYS2bMpQD7kBnM3AvKTM8%3D
+2019-03-18 11:57:00 463|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:66|enter FUNC:[parseInputMsg] LINE:[66] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:57:00 463|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:336|enter FUNC:[excute] LINE:[336] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:57:00 463|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:673|enter FUNC:[qryBankByCurrCity] LINE:[673] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:57:00 463|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782|exec sql[ SELECT Fbank_type FROM ucc_db.t_bank_position where LOCATE(Fcity,'北京市')>0 ]
+2019-03-18 11:57:00 463|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782|SQL Query:526 us
+2019-03-18 11:57:00 463|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:353|select by city, bank type[4951|4952|4953|4954|4955]
+2019-03-18 11:57:00 463|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_select_bank_c.cpp:52|enter FUNC:[selectBankByChannel] LINE:[52] FILE:[../service/ucc_select_bank_c.cpp]
+2019-03-18 11:57:00 463|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||preprocess_data.cpp:134|enter FUNC:[getChannelAttri] LINE:[134] FILE:[../comm/preprocess_data.cpp]
+2019-03-18 11:57:00 463|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:363|select by channel, bank[4951|4952|4953|4954|4955]
+2019-03-18 11:57:00 464|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782|exec sql[SELECT Fbank_type FROM ucc_db.t_apply_recode_3 WHERE Funionid='o1oBiwlnFuRdQ-TlEpXeeIlLhhzY' and FState!=6 ORDER BY Fcreate_time ASC]
+2019-03-18 11:57:00 464|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782|SQL Query:501 us
+2019-03-18 11:57:00 464|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:375|select by apply, bank[4951|4954]
+2019-03-18 11:57:00 464|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||bi_beehive_client.cpp:56|uin: 085e9858e9867e22d5ec247a5@wx.tenpay.com, md5: 70adeee15cf74ca7b8f5b45abfa16e2a, rule: 000-fff
+2019-03-18 11:57:00 464|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||bi_beehive_client.cpp:78|user 085e9858e9867e22d5ec247a5@wx.tenpay.com enabled to use beehive? 1
+2019-03-18 11:57:00 464|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:381|call bi beehive for user 085e9858e9867e22d5ec247a5@wx.tenpay.com
+2019-03-18 11:57:00 464|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||bi_beehive_client.cpp:98|strSignSrc=[uzM1ffsKJKyGun665MzlUVxH9CFvgVEL2019031810.125.48.146] post=[{"channelId":"0001","fappid":"AsOqvhZk","fuin":"085e9858e9867e22d5ec247a5@wx.tenpa
+y.com","lbscity":"北京市","sceneId":"1","sign":"e135e9bc31d406d2374567191dfa346b","timestamp":"20190318"}]
+2019-03-18 11:57:00 464|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782|updateHostInfo use default config, host:10.167.2.28, port:8080, timeout:1
+2019-03-18 11:57:00 464|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782|http req:POST /crisk/wePlusCard/getBankList.do HTTP/1.0
+Host: 10.167.2.28
+Accept: */*
+Content-Length: 191
+Content-Type: application/json
+
+{"channelId":"0001","fappid":"AsOqvhZk","fuin":"085e9858e9867e22d5ec247a5@wx.tenpay.com","lbscity":"北京市","sceneId":"1","sign":"e135e9bc31d406d2374567191dfa346b","timestamp":"20190318"}
+
+2019-03-18 11:57:00 464|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782|http://10.167.2.28:8080//crisk/wePlusCard/getBankList.do
+POST /crisk/wePlusCard/getBankList.do HTTP/1.0
+Host: 10.167.2.28
+Accept: */*
+Content-Length: 191
+Content-Type: application/json
+
+{"channelId":"0001","fappid":"AsOqvhZk","fuin":"085e9858e9867e22d5ec247a5@wx.tenpay.com","lbscity":"北京市","sceneId":"1","sign":"e135e9bc31d406d2374567191dfa346b","timestamp":"20190318"}
+
+2019-03-18 11:57:00 471|ERROR|ucc_query_right_index_c|21899|51092307d0a13923985622213782|create socket err:Connection refused [socket.cpp: 330]
+2019-03-18 11:57:00 471|ERROR|ucc_query_right_index_c|21899|51092307d0a13923985622213782|timecost:6261, BgHttpCall Fail
+2019-03-18 11:57:00 471|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782|reset the connection...
+2019-03-18 11:57:00 471|ERROR|ucc_query_right_index_c|21899|51092307d0a13923985622213782||bi_beehive_client.cpp:134|exception when calling BI beehive service, e.what=Failed to post data
+2019-03-18 11:57:00 471|ERROR|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:399|failed to get recommended bank types for 085e9858e9867e22d5ec247a5@wx.tenpay.com: 868121331 Failed to post data
+2019-03-18 11:57:00 471|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:407|select by BI, bank[4951|4954]
+2019-03-18 11:57:00 471|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:835|enter FUNC:[getAllCardTemp] LINE:[835] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:57:00 471|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||preprocess_data.cpp:164|enter FUNC:[getCardTempInfo] LINE:[164] FILE:[../comm/preprocess_data.cpp]
+2019-03-18 11:57:00 471|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:850|channel=微加卡-公众号-卡片申请, cardNum=D0001
+2019-03-18 11:57:00 471|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:850|channel=微加卡-公众号-卡片申请, cardNum=D0004
+2019-03-18 11:57:00 471|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:850|channel=微加卡-公众号-卡片申请, cardNum=D0003
+2019-03-18 11:57:00 471|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:774|enter FUNC:[unionBIRecommCardTemp] LINE:[774] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:57:00 471|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_itg_tool.cpp:538|strSign=[e1547057e58c0ae342e8c4a959d0406385cef3d2155288142010.125.48.146] post param=[fuin=085e9858e9867e22d5ec247a5@wx.tenpay.com&timestamp=1552881420&sign=1e
+5758d13771e9748b7b2a35c7bb2d13&fappId=10010&adPos=100100006&validItems=D0001,D0004,D0003]2019-03-18 11:57:00 471|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782|updateHostInfo from L5, host:10.209.2.234, port:8080
+2019-03-18 11:57:00 471|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782|http req:GET /recommend/api/recommend.do?fuin=085e9858e9867e22d5ec247a5@wx.tenpay.com&timestamp=1552881420&sign=1e5758d13771e9748b7b2a35c7bb2d13&fappId=10010&adPos=100100006&validIt
+ems=D0001,D0004,D0003 HTTP/1.0Host:10.209.2.234
+Accept:*/*
+Referer:
+
+
+2019-03-18 11:57:00 478|ERROR|ucc_query_right_index_c|21899|51092307d0a13923985622213782|create socket err:Connection refused [socket.cpp: 330]
+2019-03-18 11:57:00 478|ERROR|ucc_query_right_index_c|21899|51092307d0a13923985622213782|BgHttpCall Fail, timecost:6950
+2019-03-18 11:57:00 478|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782|reportResult, retcode:-1, timecost:6950
+2019-03-18 11:57:00 478|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782|reset the connection...
+2019-03-18 11:57:00 478|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782|reset the connection...
+2019-03-18 11:57:00 478|ERROR|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:803|callBiRecommend error[868112011, bi recommand http request error]
+2019-03-18 11:57:00 478|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782|send warning errCode[868112011] errMsg[<ERROR>
+query bi cardTemp error:bi recommand http request error
+</ERROR>]
+2019-03-18 11:57:00 478|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:641|enter FUNC:[qryCityList] LINE:[641] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:57:00 478|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782|exec sql[ SELECT Fprovince,Fcity FROM ucc_db.t_bank_position where Fbank_type like '%4951%' or Fbank_type like '%4954%';]
+2019-03-18 11:57:00 479|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782|SQL Query:616 us
+2019-03-18 11:57:00 479|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:469|enter FUNC:[queryFidPolarRecommend] LINE:[469] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:57:00 480|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:591|enter FUNC:[GetLocalIP] LINE:[591] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:57:00 480|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:496|strSign=[e1547057e58c0ae342e8c4a959d0406385cef3d22019031810.125.48.146] post param=[timestamp=20190318&adPos=100100001&bankid=4951,4954&fappId=10010
+&fuin=085e9858e9867e22d5ec247a5@wx.tenpay.com&sign=c0a787b30d926b40150e558634cb8e6a&channelId=0001]2019-03-18 11:57:00 480|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782|updateHostInfo use default config, host:10.241.137.148, port:8080, timeout:1
+2019-03-18 11:57:00 480|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782|http req:GET /recommend/api/recommend.do?timestamp=20190318&adPos=100100001&bankid=4951,4954&fappId=10010&fuin=085e9858e9867e22d5ec247a5@wx.tenpay.com&sign=c0a787b30d926b40150e55863
+4cb8e6a&channelId=0001 HTTP/1.0Host:10.241.137.148
+Accept:*/*
+Referer:
+
+
+2019-03-18 11:57:00 486|ERROR|ucc_query_right_index_c|21899|51092307d0a13923985622213782|create socket err:Connection refused [socket.cpp: 330]
+2019-03-18 11:57:00 486|ERROR|ucc_query_right_index_c|21899|51092307d0a13923985622213782|BgHttpCall Fail, timecost:6347
+2019-03-18 11:57:00 486|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782|reset the connection...
+2019-03-18 11:57:00 486|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782|reset the connection...
+2019-03-18 11:57:00 486|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:451|enter FUNC:[queryDataFromDb] LINE:[451] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:57:00 486|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:537|enter FUNC:[genQryCondition] LINE:[537] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:57:00 486|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782|exec sql[ SELECT Fpackage_id, Fbank_type, Fname, Ftitle1, Fdesc,  Fimg, Fclass_id, Fattain_regular, Fcreate_time, Fmodify_time,Fcnt,Fshow_label,Flabel_show_time FROM ucc_db.t_right
+_package   where  Fstate=3  and Fpackage_id in ('100001','100004','100005','100006','100007','100009','100012','100013','100014','100016','100017','100018','100021','100028','100029','100038','100039','100040','100045')  and  (  Fbank_type like '%4951%'  or  Fbank_type like '%4954%'  )  and (Fpackage_id in (select Fpackage_id from ucc_db.t_right_service where Fstate=3  and  (  Fbank_type = '4951'  or  Fbank_type = '4954'  )  ) or Fpackage_type=2)   order by Fmodify_time ASC; ]2019-03-18 11:57:00 487|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782|SQL Query:1101 us
+2019-03-18 11:57:00 488|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:453|m_RightPackageMap size = [14]
+2019-03-18 11:57:00 488|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:454|filterRightPackageByChannel, m_RightPackageMap size = [14]
+2019-03-18 11:57:00 488|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782|exec sql[SELECT Fclass_id, Fclass_name, Fclass_url, Fcreate_time, Fmodify_time, Fstandby1, Fstandby2 FROM ucc_db.t_package_class  where Fstate=3  order by Fmodify_time DESC ;]
+2019-03-18 11:57:00 488|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782|SQL Query:459 us
+2019-03-18 11:57:00 488|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:457|m_RightPackageClassList size = [10]
+2019-03-18 11:57:00 488|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782|exec sql[SELECT Fcombo_id, Fcombo_name, Fcombo_url, Fpackage_list, Fcreate_time, Fmodify_time, Fstandby1, Fstandby2 FROM ucc_db.t_package_combo order by Fmodify_time DESC ;]
+2019-03-18 11:57:00 488|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782|SQL Query:391 us
+2019-03-18 11:57:00 488|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:460|m_RightPackageComboList size = [0]
+2019-03-18 11:57:00 488|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782|exec sql[SELECT Fpackage_id, Fservice_id, Fbank_type, Fname, Fcnt, Fuse_desc, Fimg, Fscope, Fdetail, Fshow_type, Fclass_id, Fusing_url, Fusing_state, Fexplanation_url, Fcreate_time
+, Fmodify_time, Fstate, Fversion FROM ucc_db.t_right_service order by Fmodify_time]2019-03-18 11:57:00 489|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782|SQL Query:714 us
+2019-03-18 11:57:00 491|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:463|service size = [56]
+2019-03-18 11:57:00 491|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:816|enter FUNC:[refreshRightPakcageShowLabel] LINE:[816] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:57:00 491|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:82|enter FUNC:[packReturnMsg] LINE:[82] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:57:00 491|ERROR|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:110|BI.response error, no items node
+2019-03-18 11:57:00 491|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:113|query recommend items failed, load package from config file
+2019-03-18 11:57:00 491|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||preprocess_data.cpp:164|enter FUNC:[getCardTempInfo] LINE:[164] FILE:[../comm/preprocess_data.cpp]
+2019-03-18 11:57:00 491|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:871|enter FUNC:[sortCardTempListByBIRet] LINE:[871] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:57:00 491|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:884|BI recomment cardTemp is empty
+2019-03-18 11:57:00 491|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:871|enter FUNC:[sortCardTempListByBIRet] LINE:[871] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:57:00 491|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:884|BI recomment cardTemp is empty
+2019-03-18 11:57:00 491|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||preprocess_data.cpp:171|enter FUNC:[getChannelDefine] LINE:[171] FILE:[../comm/preprocess_data.cpp]
+2019-03-18 11:57:00 491|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||preprocess_data.cpp:171|enter FUNC:[getChannelDefine] LINE:[171] FILE:[../comm/preprocess_data.cpp]
+2019-03-18 11:57:00 492|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_query_right_index_c.cpp:59|enter FUNC:[~UccQueryRightIndex] LINE:[59] FILE:[../service/ucc_query_right_index_c.cpp]
+2019-03-18 11:57:00 492|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782|reset the connection...
+2019-03-18 11:57:00 492|DEBUG|ucc_query_right_index_c|21899|51092307d0a13923985622213782||ucc_select_bank_c.cpp:47|enter FUNC:[~UccSelectBank] LINE:[47] FILE:[../service/ucc_select_bank_c.cpp]
+2019-03-18 11:57:00 492|NORMAL|ucc_query_right_index_c|21899|51092307d0a13923985622213782||runinfo.cpp:159||out|29|result=0&res_info=ok&repay_gray_4951=0&repay_gray_4952=0&repay_gray_4953=0&repay_gray_4954=0&bankTypes=["4951","4954"]%0a&cardState=0&cityList={"上海":["上
+海"],"云南":["大理","昆明","曲靖","玉溪","红河"],"内蒙古":["呼和浩特","包头","鄂尔多斯","赤峰"],"北京":["北京"],"吉林":["长春","吉林"],"四川":["眉山","成都","德阳","南充","宜宾","达州"],"天津":["天津"],"宁夏":["银川"],"安徽":["合肥","芜湖","安庆","滁州","六安"],"山东":["济南","济宁","淄博","滨州","威海","东营","青岛","日照","莱芜","潍坊","聊城","枣庄","临沂","烟台"],"山西":["太原","临汾","长治","大同","柳林县","吕梁"],"广东":["广州","深圳","珠海","佛山","东莞","中山","江门","潮州","河源","惠州","揭阳","茂名","梅州","清远","汕头","韶关","阳江","湛江","云浮","肇庆"],"广西":["南宁","柳州","钦州","桂林"],"新疆":["昌吉","乌鲁木齐","喀什"],"江苏":["南京","常州","南通","无锡","镇江","泰州","盐城","淮安","扬州","苏州","徐州"],"江西":["南昌","赣州","九江","萍乡"],"河北":["石家庄","唐山","廊坊","沧州","保定","承德","黄骅","涿州"],"河南":["郑州","安阳","焦作","洛阳","平顶山","三门峡","新乡","南阳","商丘","汝州","信阳"],"浙江":["杭州","嘉兴","金华","宁波","台州","温州","义乌","绍兴","慈溪","奉化","瑞安","湖州","衢州","富阳","丽水"],"海南":["海口","三亚"],"湖北":["武汉","黄石","宜昌","襄阳","十堰","鄂州"],"湖南":["长沙","岳阳","常德","衡阳","湘潭","株洲","邵阳"],"甘肃":["兰州"],"福建":["福州","泉州","厦门","莆田","龙岩","漳州","宁德","三明"],"贵州":["贵阳","遵义"],"辽宁":["沈阳","鞍山","本溪","大连","葫芦岛","盘锦","营口","丹东","辽阳","抚顺"],"重庆":["重庆"],"陕西":["西安","咸阳","榆林","宝鸡","渭南"],"青海":["西宁","海东"],"黑龙江":["哈尔滨","大庆","牡丹江","齐齐哈尔"]}%0a&bi={}&biCardTmp={}&card_images={"4951":[{"cardLevel":"金卡","cardOrg":"银联","imageId":"D0001","imageUrl":"card_tuanyuan","inner_imageId":"weplus_tuanyuan_4951","name":"","shortDesc":"微加银联团员卡","special_imageId":""},{"cardLevel":"金卡","cardOrg":"银联","imageId":"D0004","imageUrl":"card_xy","inner_imageId":"weplus_xy_4951","name":"","shortDesc":"微加银联蓝色梦想卡","special_imageId":""},{"cardLevel":"金卡","cardOrg":"银联","imageId":"D0003","imageUrl":"card_xy_pink","inner_imageId":"weplus_xy_pink_4951","name":"","shortDesc":"微加银联粉色青春卡","special_imageId":""}],"4954":[{"cardLevel":"金卡","cardOrg":"银联","imageId":"CS0521","imageUrl":"card","inner_imageId":"weplus_CUPstandard_4954","name":"","shortDesc":"微加银联标准卡黑卡","special_imageId":""}]}%0a&recommend=[{"Fclass_id":"BI","Fclass_name":"个性尊享","Fclass_url":"BI_URL","right_packages":[{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"滴滴快车10元现金券4张","Fimg":"icon-didi","Fname":"出行有礼","Fpackage_id":"100001","Ftitle1":"滴滴快车10元现金券","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"腾讯视频VIP会员月卡3张","Fimg":"icon-qqvideo","Fname":"视听享受","Fpackage_id":"100004","Ftitle1":"腾讯视频VIP会员月卡","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满299元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"全国电影通用兑换券2张","Fimg":"icon-film","Fname":"影视大片","Fpackage_id":"100007","Ftitle1":"全国电影兑换券","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"电商消费奖励5倍积分","Fimg":"icon-ecommerce","Fname":"网购积分","Fpackage_id":"100016","Ftitle1":"电商消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"超市/便利店消费奖励5倍积分","Fimg":"icon-supermarket","Fname":"超市积分","Fpackage_id":"100017","Ftitle1":"超市消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"丝芙兰/屈臣氏等消费奖励5倍积分","Fimg":"icon-cosmetic","Fname":"美妆积分","Fpackage_id":"100018","Ftitle1":"美妆消费奖励5倍积分","packageLabel":"","required":0}]}]%0a&right_package=[{"Fclass_id":"10002","Fclass_name":"娱乐","Fclass_url":"","right_packages":[{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"腾讯视频VIP会员月卡3张","Fimg":"icon-qqvideo","Fname":"视听享受","Fpackage_id":"100004","Ftitle1":"腾讯视频VIP会员月卡","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"优酷视频VIP会员月卡3张","Fimg":"icon-youku","Fname":"视听享受","Fpackage_id":"100005","Ftitle1":"优酷视频VIP会员月卡","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"爱奇艺视频VIP会员月卡3张","Fimg":"icon-iqiyi","Fname":"视听享受","Fpackage_id":"100006","Ftitle1":"爱奇艺视频VIP会员月卡","packageLabel":"","required":0},{"Fattain_regular":"微信支付单笔满299元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"全国电影通用兑换券2张","Fimg":"icon-film","Fname":"影视大片","Fpackage_id":"100007","Ftitle1":"全国电影兑换券","packageLabel":"","required":0}]},{"Fclass_id":"10003","Fclass_name":"美食","Fclass_url":"","right_packages":[{"Fattain_regular":"线下刷卡单笔满699元领取","Fbank_type":"4951","Fdesc":"小熊0.6L滴漏咖啡机1台","Fimg":"icon-coffeegift","Fname":"咖啡制造","Fpackage_id":"100029","Ftitle1":"小熊0.6L滴漏咖啡机","packageLabel":"","required":0}]},{"Fclass_id":"10004","Fclass_name":"车主","Fclass_url":"","right_packages":[{"Fattain_regular":"线下刷卡单笔满199元领取1次","Fbank_type":"4951","Fdesc":"车点点25元5座洗车券1张","Fimg":"icon-carcleaning","Fname":"洗车有礼","Fpackage_id":"100021","Ftitle1":"车点点25元5座洗车券","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4951","Fdesc":"加油消费奖励2倍积分","Fimg":"icon-gas","Fname":"加油积分","Fpackage_id":"100039","Ftitle1":"加油消费积分翻倍","packageLabel":"","required":0}]},{"Fclass_id":"10006","Fclass_name":"购物","Fclass_url":"","right_packages":[{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"电商消费奖励5倍积分","Fimg":"icon-ecommerce","Fname":"网购积分","Fpackage_id":"100016","Ftitle1":"电商消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"超市/便利店消费奖励5倍积分","Fimg":"icon-supermarket","Fname":"超市积分","Fpackage_id":"100017","Ftitle1":"超市消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4952|4954|4955","Fdesc":"丝芙兰/屈臣氏等消费奖励5倍积分","Fimg":"icon-cosmetic","Fname":"美妆积分","Fpackage_id":"100018","Ftitle1":"美妆消费奖励5倍积分","packageLabel":"","required":0},{"Fattain_regular":"","Fbank_type":"4951","Fdesc":"微信支付奖励2倍积分","Fimg":"icon-wechatpoints","Fname":"微信积分","Fpackage_id":"100038","Ftitle1":"微信支付积分翻倍","packageLabel":"","required":0}]},{"Fclass_id":"10008","Fclass_name":"安全","Fclass_url":"","right_packages":[{"Fattain_regular":"","Fbank_type":"4951","Fdesc":"交易安全卫士3个月","Fimg":"icon-protection","Fname":"交易安全","Fpackage_id":"100040","Ftitle1":"交易安全卫士","packageLabel":"","required":0}]},{"Fclass_id":"10001","Fclass_name":"出行","Fclass_url":"","right_packages":[{"Fattain_regular":"微信支付单笔满199元领取1次","Fbank_type":"4951|4952|4953|4954|4955","Fdesc":"滴滴快车10元现金券4张","Fimg":"icon-didi","Fname":"出行有礼","Fpackage_id":"100001","Ftitle1":"滴滴快车10元现金券","packageLabel":"","required":0},{"Fattain_regular":"线下刷卡单笔满699元领取package","Fbank_type":"4951","Fdesc":"龙腾机场贵宾厅服务1人次","Fimg":"icon-dragonpass","Fname":"机场贵宾package","Fpackage_id":"100028","Ftitle1":"龙腾机场贵宾厅服务pacgage","packageLabel":"","required":0}]}]%0a&channelAdImage=
