@@ -1,0 +1,70 @@
+SELECT Fpackage_id, Fservice_id, Fbank_type, Fname, Fcnt, Fuse_desc, Fimg, Fscope, Fdetail, Fshow_type, Fclass_id, Fusing_url, Fusing_state, Fexplanation_url, Fcreate_time
+, Fmodify_time, Fstate, Fversion FROM ucc_db.t_right_service order by Fmodify_time;
+SELECT Fchannel_id, Fchannel_name, Fbank_type, Fcard_temp_list, Fpackage_list, Flock_package_list,Fis_check_white,Fis_channnelid_to_bank, Fstandby4 FROM ucc_db.t_channel_at
+tri where Fstate=3 and Fchannel_id='0001' and Fstandby4!='' limit 1;
+SELECT Faccid, Fstate, Ftype, Fcreate_time, Fmodify_time, Funionid, Fsupport_banks FROM ucc_db.t_spec_user_2 WHERE Faccid='085e9858e9867e22d5ec247a5' and Fstate=1 limit 2;
+ SELECT Fbank_type FROM ucc_db.t_bank_position where LOCATE(Fcity,'北京市')>0 ;
+SELECT Fbank_type FROM ucc_db.t_apply_recode_3 WHERE Funionid='o1oBiwlnFuRdQ-TlEpXeeIlLhhzY' and FState!=6 ORDER BY Fcreate_time ASC;
+ SELECT Fprovince,Fcity FROM ucc_db.t_bank_position where Fbank_type like '%4951%' or Fbank_type like '%4954%';;
+ SELECT Fpackage_id, Fbank_type, Fname, Ftitle1, Fdesc,  Fimg, Fclass_id, Fattain_regular, Fcreate_time, Fmodify_time,Fcnt,Fshow_label,Flabel_show_time FROM ucc_db.t_right
+_package   where  Fstate=3  and Fpackage_id in ('100001','100004','100005','100006','100007','100009','100012','100013','100014','100016','100017','100018','100021','100028','100029','100038','100039','100040','100045')  and  (  Fbank_type like '%4951%'  or  Fbank_type like '%4954%'  )  and (Fpackage_id in (select Fpackage_id from ucc_db.t_right_service where Fstate=3  and  (  Fbank_type = '4951'  or  Fbank_type = '4954'  )  ) or Fpackage_type=2)   order by Fmodify_time ASC; ;
+SELECT Fclass_id, Fclass_name, Fclass_url, Fcreate_time, Fmodify_time, Fstandby1, Fstandby2 FROM ucc_db.t_package_class  where Fstate=3  order by Fmodify_time DESC ;;
+SELECT Fcombo_id, Fcombo_name, Fcombo_url, Fpackage_list, Fcreate_time, Fmodify_time, Fstandby1, Fstandby2 FROM ucc_db.t_package_combo order by Fmodify_time DESC ;;
+SELECT Fpackage_id, Fservice_id, Fbank_type, Fname, Fcnt, Fuse_desc, Fimg, Fscope, Fdetail, Fshow_type, Fclass_id, Fusing_url, Fusing_state, Fexplanation_url, Fcreate_time
+, Fmodify_time, Fstate, Fversion FROM ucc_db.t_right_service order by Fmodify_time;
+SELECT Fchannel_id, Fchannel_name, Fbank_type, Fcard_temp_list, Fpackage_list, Flock_package_list,Fis_check_white,Fis_channnelid_to_bank, Fstandby4 FROM ucc_db.t_channel_at
+tri where Fstate=3 and Fchannel_id='0001' and Fstandby4!='' limit 1;
+SELECT Faccid, Fstate, Ftype, Fcreate_time, Fmodify_time, Funionid, Fsupport_banks FROM ucc_db.t_spec_user_2 WHERE Faccid='085e9858e9867e22d5ec247a5' and Fstate=1 limit 2;
+ SELECT Fbank_type FROM ucc_db.t_bank_position where LOCATE(Fcity,'北京')>0 ;
+SELECT Fchannel_id, Fchannel_name, Fbank_type, Fcard_temp_list, Fpackage_list, Flock_package_list,Fis_check_white,Fis_channnelid_to_bank FROM ucc_db.t_channel_attri where 
+Fstate=3 ;
+SELECT Fcard_temp_list, Fdescribe, Ftemp_list from ucc_db.t_card_temp_list;
+SELECT Ftemp_name, Ftemp_id, Ftemp_img,Fcard_org,Fcard_level,Fcard_num,Fspecial_card_num,Fbank_type from ucc_db.t_card_temp_info;
+SELECT Fid, Fname, Flist from ucc_db.t_package_list;
+select Fid,Fchannel_id,Fchannel_name,Fstate,Fimage from ucc_db.t_channel where Fstate=3;
+SELECT Fbank_type FROM ucc_db.t_apply_recode_3 WHERE Funionid='o1oBiwlnFuRdQ-TlEpXeeIlLhhzY' and FState!=6 ORDER BY Fcreate_time ASC;
+ SELECT Fprovince,Fcity FROM ucc_db.t_bank_position where Fbank_type like '%4951%' or Fbank_type like '%4954%';;
+ SELECT Fpackage_id, Fbank_type, Fname, Ftitle1, Fdesc,  Fimg, Fclass_id, Fattain_regular, Fcreate_time, Fmodify_time,Fcnt,Fshow_label,Flabel_show_time FROM ucc_db.t_right
+_package   where  Fstate=3  and Fpackage_id in ('100001','100004','100005','100006','100007','100009','100012','100013','100014','100016','100017','100018','100021','100028','100029','100038','100039','100040','100045')  and  (  Fbank_type like '%4951%'  or  Fbank_type like '%4954%'  )  and (Fpackage_id in (select Fpackage_id from ucc_db.t_right_service where Fstate=3  and  (  Fbank_type = '4951'  or  Fbank_type = '4954'  )  ) or Fpackage_type=2)   order by Fmodify_time ASC; ;
+SELECT Fclass_id, Fclass_name, Fclass_url, Fcreate_time, Fmodify_time, Fstandby1, Fstandby2 FROM ucc_db.t_package_class  where Fstate=3  order by Fmodify_time DESC ;;
+SELECT Fcombo_id, Fcombo_name, Fcombo_url, Fpackage_list, Fcreate_time, Fmodify_time, Fstandby1, Fstandby2 FROM ucc_db.t_package_combo order by Fmodify_time DESC ;;
+SELECT Fpackage_id, Fservice_id, Fbank_type, Fname, Fcnt, Fuse_desc, Fimg, Fscope, Fdetail, Fshow_type, Fclass_id, Fusing_url, Fusing_state, Fexplanation_url, Fcreate_time
+, Fmodify_time, Fstate, Fversion FROM ucc_db.t_right_service order by Fmodify_time;
+select Funionid, Fopenid, Faccid, Fstate, Fcreate_time, Fmodify_time from ucc_db.t_subscribe where Fopenid='oc-i20e24RWiBtsrGM9Nya4a6aNE' limit 2;
+SELECT Fchannel_id, Fchannel_name, Fbank_type, Fcard_temp_list, Fpackage_list, Flock_package_list,Fis_check_white,Fis_channnelid_to_bank, Fstandby4 FROM ucc_db.t_channel_at
+tri where Fstate=3 and Fchannel_id='0001' and Fstandby4!='' limit 1;
+SELECT Faccid, Fstate, Ftype, Fcreate_time, Fmodify_time, Funionid, Fsupport_banks FROM ucc_db.t_spec_user_2 WHERE Faccid='085e9858e9867e22d5ec247a5' and Fstate=1 limit 2;
+ SELECT Fbank_type FROM ucc_db.t_bank_position where LOCATE(Fcity,'北京')>0 ;
+SELECT Fbank_type FROM ucc_db.t_apply_recode_3 WHERE Funionid='o1oBiwlnFuRdQ-TlEpXeeIlLhhzY' and FState!=6 ORDER BY Fcreate_time ASC;
+ SELECT Fprovince,Fcity FROM ucc_db.t_bank_position where Fbank_type like '%4951%' or Fbank_type like '%4954%';;
+ SELECT Fpackage_id, Fbank_type, Fname, Ftitle1, Fdesc,  Fimg, Fclass_id, Fattain_regular, Fcreate_time, Fmodify_time,Fcnt,Fshow_label,Flabel_show_time FROM ucc_db.t_right
+_package   where  Fstate=3  and Fpackage_id in ('100001','100004','100005','100006','100007','100009','100012','100013','100014','100016','100017','100018','100021','100028','100029','100038','100039','100040','100045')  and  (  Fbank_type like '%4951%'  or  Fbank_type like '%4954%'  )  and (Fpackage_id in (select Fpackage_id from ucc_db.t_right_service where Fstate=3  and  (  Fbank_type = '4951'  or  Fbank_type = '4954'  )  ) or Fpackage_type=2)   order by Fmodify_time ASC; ;
+SELECT Fclass_id, Fclass_name, Fclass_url, Fcreate_time, Fmodify_time, Fstandby1, Fstandby2 FROM ucc_db.t_package_class  where Fstate=3  order by Fmodify_time DESC ;;
+SELECT Fcombo_id, Fcombo_name, Fcombo_url, Fpackage_list, Fcreate_time, Fmodify_time, Fstandby1, Fstandby2 FROM ucc_db.t_package_combo order by Fmodify_time DESC ;;
+SELECT Fpackage_id, Fservice_id, Fbank_type, Fname, Fcnt, Fuse_desc, Fimg, Fscope, Fdetail, Fshow_type, Fclass_id, Fusing_url, Fusing_state, Fexplanation_url, Fcreate_time
+, Fmodify_time, Fstate, Fversion FROM ucc_db.t_right_service order by Fmodify_time;
+select Funionid, Fopenid, Faccid, Fstate, Fcreate_time, Fmodify_time from ucc_db.t_subscribe where Fopenid='oc-i20e24RWiBtsrGM9Nya4a6aNE' limit 2;
+SELECT Fchannel_id, Fchannel_name, Fbank_type, Fcard_temp_list, Fpackage_list, Flock_package_list,Fis_check_white,Fis_channnelid_to_bank, Fstandby4 FROM ucc_db.t_channel_at
+tri where Fstate=3 and Fchannel_id='0001' and Fstandby4!='' limit 1;
+SELECT Faccid, Fstate, Ftype, Fcreate_time, Fmodify_time, Funionid, Fsupport_banks FROM ucc_db.t_spec_user_2 WHERE Faccid='085e9858e9867e22d5ec247a5' and Fstate=1 limit 2;
+ SELECT Fbank_type FROM ucc_db.t_bank_position where LOCATE(Fcity,'北京市')>0 ;
+SELECT Fbank_type FROM ucc_db.t_apply_recode_3 WHERE Funionid='o1oBiwlnFuRdQ-TlEpXeeIlLhhzY' and FState!=6 ORDER BY Fcreate_time ASC;
+ SELECT Fprovince,Fcity FROM ucc_db.t_bank_position where Fbank_type like '%4951%' or Fbank_type like '%4954%';;
+ SELECT Fpackage_id, Fbank_type, Fname, Ftitle1, Fdesc,  Fimg, Fclass_id, Fattain_regular, Fcreate_time, Fmodify_time,Fcnt,Fshow_label,Flabel_show_time FROM ucc_db.t_right
+_package   where  Fstate=3  and Fpackage_id in ('100001','100004','100005','100006','100007','100009','100012','100013','100014','100016','100017','100018','100021','100028','100029','100038','100039','100040','100045')  and  (  Fbank_type like '%4951%'  or  Fbank_type like '%4954%'  )  and (Fpackage_id in (select Fpackage_id from ucc_db.t_right_service where Fstate=3  and  (  Fbank_type = '4951'  or  Fbank_type = '4954'  )  ) or Fpackage_type=2)   order by Fmodify_time ASC; ;
+SELECT Fclass_id, Fclass_name, Fclass_url, Fcreate_time, Fmodify_time, Fstandby1, Fstandby2 FROM ucc_db.t_package_class  where Fstate=3  order by Fmodify_time DESC ;;
+SELECT Fcombo_id, Fcombo_name, Fcombo_url, Fpackage_list, Fcreate_time, Fmodify_time, Fstandby1, Fstandby2 FROM ucc_db.t_package_combo order by Fmodify_time DESC ;;
+SELECT Fpackage_id, Fservice_id, Fbank_type, Fname, Fcnt, Fuse_desc, Fimg, Fscope, Fdetail, Fshow_type, Fclass_id, Fusing_url, Fusing_state, Fexplanation_url, Fcreate_time
+, Fmodify_time, Fstate, Fversion FROM ucc_db.t_right_service order by Fmodify_time;
+SELECT Fchannel_id, Fchannel_name, Fbank_type, Fcard_temp_list, Fpackage_list, Flock_package_list,Fis_check_white,Fis_channnelid_to_bank, Fstandby4 FROM ucc_db.t_channel_at
+tri where Fstate=3 and Fchannel_id='0001' and Fstandby4!='' limit 1;
+SELECT Faccid, Fstate, Ftype, Fcreate_time, Fmodify_time, Funionid, Fsupport_banks FROM ucc_db.t_spec_user_2 WHERE Faccid='085e9858e9867e22d5ec247a5' and Fstate=1 limit 2;
+ SELECT Fbank_type FROM ucc_db.t_bank_position where LOCATE(Fcity,'北京市')>0 ;
+SELECT Fbank_type FROM ucc_db.t_apply_recode_3 WHERE Funionid='o1oBiwlnFuRdQ-TlEpXeeIlLhhzY' and FState!=6 ORDER BY Fcreate_time ASC;
+ SELECT Fprovince,Fcity FROM ucc_db.t_bank_position where Fbank_type like '%4951%' or Fbank_type like '%4954%';;
+ SELECT Fpackage_id, Fbank_type, Fname, Ftitle1, Fdesc,  Fimg, Fclass_id, Fattain_regular, Fcreate_time, Fmodify_time,Fcnt,Fshow_label,Flabel_show_time FROM ucc_db.t_right
+_package   where  Fstate=3  and Fpackage_id in ('100001','100004','100005','100006','100007','100009','100012','100013','100014','100016','100017','100018','100021','100028','100029','100038','100039','100040','100045')  and  (  Fbank_type like '%4951%'  or  Fbank_type like '%4954%'  )  and (Fpackage_id in (select Fpackage_id from ucc_db.t_right_service where Fstate=3  and  (  Fbank_type = '4951'  or  Fbank_type = '4954'  )  ) or Fpackage_type=2)   order by Fmodify_time ASC; ;
+SELECT Fclass_id, Fclass_name, Fclass_url, Fcreate_time, Fmodify_time, Fstandby1, Fstandby2 FROM ucc_db.t_package_class  where Fstate=3  order by Fmodify_time DESC ;;
+SELECT Fcombo_id, Fcombo_name, Fcombo_url, Fpackage_list, Fcreate_time, Fmodify_time, Fstandby1, Fstandby2 FROM ucc_db.t_package_combo order by Fmodify_time DESC ;;
+SELECT Fpackage_id, Fservice_id, Fbank_type, Fname, Fcnt, Fuse_desc, Fimg, Fscope, Fdetail, Fshow_type, Fclass_id, Fusing_url, Fusing_state, Fexplanation_url, Fcreate_time
+, Fmodify_time, Fstate, Fversion FROM ucc_db.t_right_service order by Fmodify_time;
